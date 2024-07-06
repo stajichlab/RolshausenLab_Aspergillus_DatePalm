@@ -1,0 +1,18 @@
+Organism Scientific Name	Organism Common Name	Organism Qualifier	Taxonomy id	Assembly Name	Assembly Accession	Source	Annotation	Level	Contig N50	Size	Submission Date	Gene Count	BioProject	BioSample
+Aspergillus tubingensis CBS 134.48		strain: CBS 134.48	767770	Asptu1	GCA_001890745.1	GenBank	Annotation submitted by DOE Joint Genome Institute	Scaffold	795496	35146149	2016-12-07	12592	PRJNA207690	SAMN00203939
+Aspergillus tubingensis		strain: C2-2	5068	ASM1061485v1	GCA_010614855.1	GenBank		Contig	4146512	35336618	2020-02-14		PRJNA598247	SAMN13702266
+Aspergillus tubingensis		strain: VS III B KN t	5068	ASM1980536v1	GCA_019805365.1	GenBank		Scaffold	1216384	35122319	2021-08-30		PRJNA644637	SAMN15543683
+Aspergillus tubingensis		strain: JS3-R1	5068	ASM1982742v1	GCA_019827425.1	GenBank		Scaffold	3153734	35046360	2021-08-31		PRJNA644637	SAMN15705203
+Aspergillus tubingensis		strain: S/N-308-IC-B1	5068	ASM1982744v1	GCA_019827445.1	GenBank		Scaffold	3153540	35044774	2021-08-31		PRJNA644637	SAMN15705202
+Aspergillus tubingensis		strain: S/N-304-OC-P1	5068	ASM1982746v1	GCA_019827465.1	GenBank		Scaffold	3153842	35047398	2021-08-31		PRJNA644637	SAMN15705200
+Aspergillus tubingensis		strain: JS3-P2	5068	ASM1982756v1	GCA_019827565.1	GenBank		Scaffold	3153573	35046282	2021-08-31		PRJNA644637	SAMN15705204
+Aspergillus tubingensis		strain: S/N-302-OC-P2	5068	ASM1982878v1	GCA_019828785.1	GenBank		Scaffold	3153718	35047104	2021-08-31		PRJNA644637	SAMN15705199
+Aspergillus tubingensis		strain: IFM 54640	5068	AtubIFM54640_1.0	GCA_027923605.1	GenBank	Annotation submitted by Medical Mycology Research Center	Scaffold	522822	35804852	2022-12-15	11762	PRJDB13764	SAMD00505447
+Aspergillus tubingensis		strain: IFM 55763	5068	AtubIFM55763_1.0	GCA_027923625.1	GenBank	Annotation submitted by Medical Mycology Research Center	Scaffold	421261	36293939	2022-12-15	11822	PRJDB13764	SAMD00505448
+Aspergillus tubingensis		strain: IFM 57143	5068	AtubIFM57143_1.0	GCA_027923665.1	GenBank	Annotation submitted by Medical Mycology Research Center	Scaffold	404448	35014021	2022-12-15	11554	PRJDB13764	SAMD00505449
+Aspergillus tubingensis		strain: IFM 57258	5068	AtubIFM57258_1.0	GCA_027923685.1	GenBank	Annotation submitted by Medical Mycology Research Center	Scaffold	597300	35494565	2022-12-15	11375	PRJDB13764	SAMD00505450
+Aspergillus tubingensis		strain: IFM 56815	5068	AtubIFM56815_1.0	GCA_027923885.1	GenBank	Annotation submitted by Medical Mycology Research Center	Scaffold	1338744	35199026	2022-12-15	11515	PRJDB13764	SAMD00505457
+Aspergillus tubingensis		strain: IFM 61612	5068	AtubIFM61612_1.0	GCA_027923925.1	GenBank	Annotation submitted by Medical Mycology Research Center	Contig	2418755	34423506	2022-12-15	11484	PRJDB13764	SAMD00505458
+Aspergillus tubingensis		strain: HFAT15	5068	ASM3076284v1	GCA_030762845.1	GenBank		Contig	3871644	35199365	2023-08-16		PRJNA956313	SAMN34209535
+Aspergillus tubingensis			5068	Atubseq	GCA_900163765.1	GenBank		Scaffold	191671	35181025	2018-02-10		PRJEB19357	SAMEA80935168
+Aspergillus tubingensis		strain: WU-2223L	5068	ASM1334032v1	GCF_013340325.1	RefSeq	Annotation submitted by Waseda University	Scaffold	3153774	35047229	2020-06-09	11809	PRJDB9560	SAMD00216538
