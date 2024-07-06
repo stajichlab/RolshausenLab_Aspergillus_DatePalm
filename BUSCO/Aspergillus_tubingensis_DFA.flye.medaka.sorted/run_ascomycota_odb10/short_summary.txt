@@ -1,0 +1,35 @@
+# BUSCO version is: 5.5.0 
+# The lineage dataset is: ascomycota_odb10 (Creation date: 2020-09-10, number of genomes: 365, number of BUSCOs: 1706)
+# Summarized benchmarking in BUSCO notation for file /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/genomes/Aspergillus_tubingensis_DFA.flye.medaka.sorted.fasta
+# BUSCO was run in mode: euk_genome_aug
+# Gene predictor used: augustus
+
+	***** Results: *****
+
+	C:99.1%[S:99.0%,D:0.1%],F:0.1%,M:0.8%,n:1706	   
+	1690	Complete BUSCOs (C)			   
+	1689	Complete and single-copy BUSCOs (S)	   
+	1	Complete and duplicated BUSCOs (D)	   
+	2	Fragmented BUSCOs (F)			   
+	14	Missing BUSCOs (M)			   
+	1706	Total BUSCO groups searched		   
+
+Assembly Statistics:
+	10	Number of scaffolds
+	10	Number of contigs
+	35487149	Total length
+	0.000%	Percent gaps
+	4 MB	Scaffold N50
+	4 MB	Contigs N50
+
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	bbtools: 39.01
+	makeblastdb: 2.15.0+
+	tblastn: 2.15.0+
+	augustus: 3.5.0
+	gff2gbSmallDNA.pl: None
+	new_species.pl: None
+	etraining: None
+	busco: 5.5.0
