@@ -23,13 +23,13 @@ do
     do
 	if [ -f  $INDIR/pilon/$BASE/$type.pilon.fasta ];  then
 		AAFTF sort -i $INDIR/pilon/$BASE/$type.pilon.fasta -o $OUTDIR/$BASE.$type.pilon.fasta
-		AAFTF assess -i $OUTDIR/$BASE.$type.pilon.fasta -r $OUTDIR/$BASE.$type.pilon.stats.txt
+		AAFTF assess -i $OUTDIR/$BASE.$type.pilon.fasta -r $OUTDIR/$BASE.$type.pilon.stats.txt -t 'TA[A]+[C]+'
 	fi
 	STATS=$OUTDIR/$BASE.$type.stats.txt
 	QUERY=$OUTDIR/$BASE.$type.fasta
 	if [[ -s $QUERY ]]; then
 	    if [[ ! -s $STATS || $QUERY -nt $STATS ]]; then
-		AAFTF assess -i $QUERY -r $STATS
+		AAFTF assess -i $QUERY -r $STATS -t 'TA[A]+[C]+'
 	    fi
 	fi
 	# copy medka
@@ -42,7 +42,7 @@ do
 			AAFTF sort -i $QUERY -o $SORTED
 		fi
 		if [[ ! -s $STATS || $SORTED -nt $STATS ]]; then
-                	AAFTF assess -i $SORTED -r $STATS
+                	AAFTF assess -i $SORTED -r $STATS -t 'TA[A]+[C]+'
 		fi
 	fi
     done
