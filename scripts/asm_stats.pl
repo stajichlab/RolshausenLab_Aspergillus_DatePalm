@@ -148,8 +148,10 @@ foreach my $file ( readdir(DIR) ) {
 		}
 		
 	    }
-	    $stats{$stem}->{'Average_Coverage'} =
+	    if ( $stats{$stem}->{'TOTAL LENGTH'} > 0 ) {
+	    	$stats{$stem}->{'Average_Coverage'} =
 		sprintf("%.1f",$base_count / $stats{$stem}->{'TOTAL LENGTH'});
+		}
 	    if( $first )  {
 		push @header, ('Reads',
 			       'Mapped_reads',			   
