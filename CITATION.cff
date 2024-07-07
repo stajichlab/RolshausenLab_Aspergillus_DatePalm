@@ -1,0 +1,49 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Genome assembly and annotation of Aspergillus tubingensis
+  DFA from a date palm
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Jason
+    name-particle: E
+    family-names: Stajich
+    email: jason.stajich@ucr.edu
+    affiliation: 'University of California, Riverside'
+    orcid: 'https://orcid.org/0000-0002-7591-0020'
+  - given-names: Vanessa
+    family-names: Ashworth
+    affiliation: 'University of California, Riverside'
+    orcid: 'https://orcid.org/0000-0003-2561-3121'
+  - family-names: Rolshausen
+    given-names: Philippe
+    orcid: 'https://orcid.org/0000-0002-6202-680X'
+identifiers:
+  - type: url
+    value: >-
+      https://github.com/stajichlab/RolshausenLab_Aspergillus_DatePalm
+    description: Github repository
+repository-code: >-
+  https://github.com/stajichlab/RolshausenLab_Aspergillus_DatePalm
+abstract: >-
+  Genome assembly and annotation of Aspergillus tubingensis
+  strain DFA isolated from a date palm. The genome was
+  sequenced with Oxford Nanopore and Illumina technologies
+  followed by assembly with Flye and polishing with POLCA.
+  The genome was masked with RepeatModeler + RepeatMasker
+  and annotated with Funannotate using available RNAseq for
+  A. tubingensis and combination of gene prediction tools
+  (Genemark.HMM+ET, SNAP, Augustus, CodingQuarry) and
+  functional annotation assigned using Pfam, Interpro,
+  Eggnog, and SignalP.
+keywords:
+  - Genome
+  - Aspergillus
+license: MIT
+version: v1.0
+date-released: '2024-07-15'

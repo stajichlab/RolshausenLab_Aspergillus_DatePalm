@@ -9,7 +9,7 @@ my $model = 'ascomycota_odb10';
 my $modelpep = 'ascomycota_odb10';
 my $BUSCO_dir = 'BUSCO';
 my $BUSCO_pep = 'BUSCO_pep';
-my $telomere_report = 'reports';
+my $telomere_report = 'telomere_reports';
 my $read_map_stat = 'mapping_report';
 my $dir = shift || 'genomes';
 my @header;
@@ -20,7 +20,7 @@ my $first = 1;
 foreach my $file ( readdir(DIR) ) {
     next unless ( $file =~ /(\S+)(\.fasta)?\.stats.txt$/);
     my $stem = $1;
-    my $stemorig = $1;
+    my $stemorig = $1;    
     $stem =~ s/\.sorted//;
     #warn("$file ($dir)\n");
     open(my $fh => "$dir/$file") || die "cannot open $dir/$file: $!";
@@ -46,8 +46,8 @@ foreach my $file ( readdir(DIR) ) {
 	if ( $first ) {
 	    push @header, qw(Telomeres_Found Telomeres_Fwd Telomeres_Rev Telomeres_CompleteChrom);
 	}
-	my $telomerefile = File::Spec->catfile($telomere_report,sprintf("%s.telomere_report.txt",$stem));
-	
+	my $telomerefile = File::Spec->catfile($telomere_report,sprintf("%s.telomere_report.txt",$stemorig));
+
 	if ( -f $telomerefile ) {
 	    open(my $fh => $telomerefile) || die $!;
 	    my %contigs_with_tel;
@@ -71,15 +71,15 @@ foreach my $file ( readdir(DIR) ) {
     }
 
     if ( -d $BUSCO_dir ) {
-		if ( $first ) { 
-			push @header, qw(BUSCO_Complete BUSCO_Single BUSCO_Duplicate
-					BUSCO_Fragmented BUSCO_Missing BUSCO_NumGenes
-			);
+	if ( $first ) { 
+	    push @header, qw(BUSCO_Complete BUSCO_Single BUSCO_Duplicate
+			     BUSCO_Fragmented BUSCO_Missing BUSCO_NumGenes
+		);
 	}
 	my $busco_file = File::Spec->catfile($BUSCO_dir,$stemorig, 
 					     sprintf("short_summary.specific.%s.%s.txt",$model,$stemorig));
-	
-	
+
+
 	if ( -f $busco_file ) {	    
 	    open(my $fh => $busco_file) || die $!;
 	    while(<$fh>) {	 
@@ -92,13 +92,13 @@ foreach my $file ( readdir(DIR) ) {
 		    $stats{$stem}->{"BUSCO_NumGenes"} = $6;
 		} 
 	    }
-	    
+
 	} else {
 	    warn("Cannot find $busco_file");
 	}
     }
 
-        if ( -d $BUSCO_pep ) {
+    if ( -d $BUSCO_pep ) {
 	if ( $first ) { 
 	    push @header, qw(BUSCOP_Complete BUSCOP_Single BUSCOP_Duplicate
 			     BUSCOP_Fragmented BUSCOP_Missing BUSCOP_NumGenes
@@ -109,7 +109,7 @@ foreach my $file ( readdir(DIR) ) {
 	my $busco_file = File::Spec->catfile($BUSCO_pep,sprintf("%s_predict_proteins",$stem_no_MT), 
 					     sprintf("short_summary.specific.%s.%s_predict_proteins.txt",$modelpep,
 						     $stem_no_MT));
-	
+
 	if ( -f $busco_file ) {
 	    open(my $fh => $busco_file) || die $!;
 	    while(<$fh>) {	 
@@ -122,16 +122,16 @@ foreach my $file ( readdir(DIR) ) {
 		    $stats{$stem}->{"BUSCOP_NumGenes"} = $6;
 		} 
 	    }
-	    
+
 	} else {
 	    warn("Cannot find $busco_file");
 	}
     }
 
     if ( -d $read_map_stat ) {
-    
+
 	my $sumstatfile = File::Spec->catfile($read_map_stat,
-					      sprintf("%s.bbmap_summary.txt",$stem));
+					      sprintf("%s.bbmap_summary.txt",$stemorig));
 	if ( -f $sumstatfile ) {
 	    open(my $fh => $sumstatfile) || die "Cannot open $sumstatfile: $!";
 	    my $read_dir = 0;
@@ -146,20 +146,22 @@ foreach my $file ( readdir(DIR) ) {
 		}  elsif( /^Reads:\s+(\S+)/) {
 		    $stats{$stem}->{'Reads'} = $1;
 		}
-		
+
 	    }
 	    if ( $stats{$stem}->{'TOTAL LENGTH'} > 0 ) {
 	    	$stats{$stem}->{'Average_Coverage'} =
-		sprintf("%.1f",$base_count / $stats{$stem}->{'TOTAL LENGTH'});
-		}
+		    sprintf("%.1f",$base_count / $stats{$stem}->{'TOTAL LENGTH'});
+	    }
 	    if( $first )  {
 		push @header, ('Reads',
 			       'Mapped_reads',			   
 			       'Average_Coverage');
 	    }
+	} else {
+	    warn("cannot find $sumstatfile\n");
 	}
     }
-    
+
     $first = 0;
 }
 print join("\t", qw(SampleID), @header), "\n";
