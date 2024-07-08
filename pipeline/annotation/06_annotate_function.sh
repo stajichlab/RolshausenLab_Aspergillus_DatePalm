@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -N 1 -c 24 -n 1 --mem 64G --out logs/annotate.%a.log
+#SBATCH -N 1 -c 24 -n 1 --mem 64G --out logs/annotate.%a.log -a 1
 # note this doesn't need that much memory EXCEPT for the XML -> tsv parsing that happens when you provided an interpro XML file
 
 module load workspace/scratch
