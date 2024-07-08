@@ -1,0 +1,25 @@
+BioSample	SRA_Run	SRA_SampID	Sample Number	biomaterial_provider	collected_by	collection_date	culture_collection	env_broad_scale	env_local_scale	env_medium	estimated_size	geo_loc_name	host	host_disease	host_taxid	isol_growth_condt	isolate	isolation_source	lat_lon	locus_tag_prefix	num_replicons	original_organism_name	ploidy	project_name	propagation	sample_name	sample_type	strain	type-material
+SAMD00216538	DRR231531	DRS140494				1960		missing	missing	soil	35M bp	Japan:Aomori				https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=NBRC&CAT=00111403			missing	AtWU	missing		haploid	Draft genome sequence of Aspergillus tubingensis WU-2223L	asexual	Aspergillus tubingensis WU-2223L		WU-2223L	
+SAMD00391814	DRR308519	DRS246472		National Research Institute of Brewing		1960		missing	missing	missing	missing	missing				missing			missing		missing		missing	Genome sequencing of Black Aspergilli	missing	MS559		RIB2623	
+SAMD00391815	DRR308520	DRS246473		National Research Institute of Brewing		1941		missing	missing	missing	missing	missing				missing			missing		missing		missing	Genome sequencing of Black Aspergilli	missing	MS560		RIB2631	
+SAMD00391816	DRR308521	DRS246474		National Research Institute of Brewing		1950		missing	missing	soil	missing	missing				missing			missing		missing		missing	Genome sequencing of Black Aspergilli	missing	MS563		RIB2036	
+SAMD00391824	DRR308529	DRS246482		Japan Collection of Microorganisms		missing		missing	missing	Awamori koji	missing	Japan				missing			missing		missing		missing	Genome sequencing of Black Aspergilli	missing	MS735		JCM22294	
+SAMD00391825	DRR308530	DRS246483		Japan Collection of Microorganisms		missing		missing	missing	Shochu koji	missing	Japan				missing			missing		missing		missing	Genome sequencing of Black Aspergilli	missing	MS736		JCM22295	
+SAMD00391826	DRR308531	DRS246484		Japan Collection of Microorganisms		missing		missing	missing	Awamori koji	missing	Japan				missing			missing		missing		missing	Genome sequencing of Black Aspergilli	missing	MS737		JCM22299	
+SAMD00391834	DRR308532	DRS246492		Japan Collection of Microorganisms		missing		missing	missing	Awamori koji	missing	Japan				missing			missing		missing		missing	Genome sequencing of Black Aspergilli	missing	MS738		JCM22302	
+SAMD00505447	DRR385063	DRS268099				2006-01-22		ENVO_00002173	missing	missing		Japan:Okayama, Kurashiki	Homo sapiens		9606	missing		sputum	34.5850 N 133.7721 E	AtubIFM54640			haploid		asexual	Aspergillus tubingensis IFM 54640		IFM 54640	
+SAMD00505448	DRR385064	DRS268100				2007-09-14		ENVO_00000116	missing	missing		Japan:Yamanashi				missing		vineyard	35.6641 N 138.5684 E	AtubIFM55763			haploid		asexual	Aspergillus tubingensis IFM 55763		IFM 55763	
+SAMD00505449	DRR385065	DRS268101				2003-06-06		ENVO_00002173	missing	missing		Japan:Osaka	Homo sapiens		9606	missing			34.6863 N 135.5198 E	AtubIFM57143			haploid		asexual	Aspergillus tubingensis IFM 57143		IFM 57143	
+SAMD00505450	DRR385066	DRS268102				2008-09		ENVO_00001998	missing	missing		Japan:Nagasaki, Minami-Matsuura				missing		soil	32.9848 N 129.0734 E	AtubIFM57258			haploid		asexual	Aspergillus tubingensis IFM 57258		IFM 57258	
+SAMD00505457	DRR385073	DRS268109				2008-02-08		ENVO_00002173	missing	missing		Japan:Kochi	Homo sapiens		9606	missing		ear	33.5596 N 133.5310 E	AtubIFM56815			haploid		asexual	Aspergillus tubingensis IFM 56815		IFM 56815	
+SAMD00505458	DRR385074	DRS268110				2012-08		ENVO_00002173	missing	missing		Japan:Tokyo	Homo sapiens		9606	missing		BALF	35.6895 N 139.6917 E	AtubIFM61612			haploid		asexual	Aspergillus tubingensis IFM 61612		IFM 61612	
+SAMN00203939	SRR3927524	SRS165553	4091039				CBS:134.48																					CBS 134.48	
+SAMN10078275	SRR7889976	SRS3811037				2018-04-04						USA:MD						Walnut halves									DNA	MOD1-FUNGI3	
+SAMN10078276	SRR7889979	SRS3811034				2018-04-04						USA:MD						Moldy peanuts									DNA	MOD1-FUNGI4	
+SAMN15543683	SRR12385190	SRS7143438				2014-09-20						USA						Vacuum filter from cleanroom				Aspergillus tubingensis NRRL 4875					pure culture	VS III B KN t	
+SAMN15705199	SRR12439775	SRS7190764				2018-08-14						USA						SpX12/RR9 Outside cage									pure culture	S/N-302-OC-P2	
+SAMN15705200	SRR12439781	SRS7190758				2017-03-06						USA						SpX11/RR5 Outisde cage									pure culture	S/N-304-OC-P1	
+SAMN15705202	SRR12439790	SRS7190750				2018-08-14						USA						SpX12/RR9 Inside cage									pure culture	S/N-308-IC-B1	
+SAMN15705203	SRR12439810	SRS7190729				2014-09-20						USA						HEPA air filter									pure culture	JS3-R1	
+SAMN15705204	SRR12439762	SRS7190776				2014-09-20						USA						HEPA air filter									pure culture	JS3-P2	
+SAMN37147745	SRR25758810	SRS18714304			UCLA Health	2022-08-17						USA: California,Los Angeles	Homo sapiens	infection			1138_1	Respiratory, Lower, Sputum-Expectorated	34.05465048 N 118.46330143 W									NRRL 4875	culture from type material of Aspergillus tubingensis
