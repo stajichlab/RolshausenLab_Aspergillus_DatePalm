@@ -1,0 +1,65 @@
+Loading funannotate/1.8
+  Loading requirement: CodingQuarry/2.0 phobius/1.01
+[Jun 14 01:19 PM]: OS: Rocky Linux 8.8, 64 cores, ~ 528 GB RAM. Python: 3.8.15
+[Jun 14 01:19 PM]: Running 1.8.17
+[Jun 14 01:19 PM]: No NCBI SBT file given, will use default, for NCBI submissions pass one here '--sbt'
+[Jun 14 01:19 PM]: Found relevant files in annotation/Aspergillus_tubingensis_DFA/training, will re-use them:
+	GFF3: annotation/Aspergillus_tubingensis_DFA/predict_results/Aspergillus_tubingensis_DFA.gff3
+	Genome: annotation/Aspergillus_tubingensis_DFA/predict_results/Aspergillus_tubingensis_DFA.scaffolds.fa
+	Forward reads: annotation/Aspergillus_tubingensis_DFA/training/left.fq.gz
+	Reverse reads: annotation/Aspergillus_tubingensis_DFA/training/right.fq.gz
+	Forward Q-trimmed reads: annotation/Aspergillus_tubingensis_DFA/training/trimmomatic/trimmed_left.fastq.gz
+	Reverse Q-trimmed reads: annotation/Aspergillus_tubingensis_DFA/training/trimmomatic/trimmed_right.fastq.gz
+	Forward normalized reads: annotation/Aspergillus_tubingensis_DFA/training/normalize/left.norm.fq
+	Reverse normalized reads: annotation/Aspergillus_tubingensis_DFA/training/normalize/right.norm.fq
+	Trinity results: annotation/Aspergillus_tubingensis_DFA/training/funannotate_train.trinity-GG.fasta
+	PASA config file: annotation/Aspergillus_tubingensis_DFA/training/pasa/alignAssembly.txt
+	BAM alignments: annotation/Aspergillus_tubingensis_DFA/training/funannotate_train.coordSorted.bam
+	StringTie GTF: annotation/Aspergillus_tubingensis_DFA/training/funannotate_train.stringtie.gtf
+[Jun 14 01:19 PM]: Reannotating Aspergillus tubingensis, NCBI accession: None
+[Jun 14 01:19 PM]: Previous annotation consists of: 11,909 protein coding gene models and 285 non-coding gene models
+[Jun 14 01:19 PM]: Existing annotation: locustag=ATUBDFA_ genenumber=12194
+[Jun 14 01:20 PM]: Converting transcript alignments to GFF3 format
+[Jun 14 01:20 PM]: Converting Trinity transcript alignments to GFF3 format
+[Jun 14 01:20 PM]: PASA database is SQLite: /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/annotation/Aspergillus_tubingensis_DFA/training/pasa/Aspergillus_tubingensis_DFA_pasa
+[Jun 14 01:20 PM]: Running PASA annotation comparison step 1
+[Jun 14 02:56 PM]: Running PASA annotation comparison step 2
+[Jun 14 06:02 PM]: Using Kallisto TPM data to determine which PASA gene models to select at each locus
+[Jun 14 06:02 PM]: Building Kallisto index
+[Jun 14 06:03 PM]: Mapping reads using pseudoalignment in Kallisto
+[Jun 14 06:08 PM]: Parsing Kallisto results. Keeping alt-splicing transcripts if expressed at least 10.0% of highest transcript per locus.
+[Jun 14 06:08 PM]: Wrote 12,806 transcripts derived from 11,908 protein coding loci.
+[Jun 14 06:08 PM]: Validating gene models (renaming, checking translations, filtering, etc)
+[Jun 14 06:09 PM]: Writing 12,175 loci to TBL format: dropped 0 overlapping, 2 too short, and 0 frameshift gene models
+[Jun 14 06:09 PM]: Converting to Genbank format
+[Jun 14 06:09 PM]: Collecting final annotation files
+[Jun 14 06:10 PM]: Comparing original annotation to updated
+ original: annotation/Aspergillus_tubingensis_DFA/predict_results/Aspergillus_tubingensis_DFA.gff3
+ updated: annotation/Aspergillus_tubingensis_DFA/update_results/Aspergillus_tubingensis_DFA.gff3
+[Jun 14 06:16 PM]: Updated annotation complete:
+-------------------------------------------------------
+Total Gene Models:	12,175
+Total transcripts:	13,074
+New Gene Models:	19
+No Change:		5,893
+Update UTRs:		6,251
+Exons Changed:		12
+Exons/CDS Changed:	0
+Dropped Models:		0
+CDS AED:		0.005
+mRNA AED:		0.064
+-------------------------------------------------------
+[Jun 14 06:16 PM]: Funannotate update is finished, output files are in the annotation/Aspergillus_tubingensis_DFA/update_results folder
+[Jun 14 06:16 PM]: Your next step might be functional annotation, suggested commands:
+-------------------------------------------------------
+Run InterProScan (Docker required): 
+funannotate iprscan -i annotation/Aspergillus_tubingensis_DFA -m docker -c 24
+
+Run antiSMASH: 
+funannotate remote -i annotation/Aspergillus_tubingensis_DFA -m antismash -e youremail@server.edu
+
+Annotate Genome: 
+funannotate annotate -i annotation/Aspergillus_tubingensis_DFA --cpus 24 --sbt yourSBTfile.txt
+-------------------------------------------------------
+                
+-------------------------------------------------------

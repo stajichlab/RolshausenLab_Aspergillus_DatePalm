@@ -1,0 +1,1302 @@
+/bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus
+Building database Aspergillus_tubingensis_DFA:
+  Reading /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/final_genome/Aspergillus_tubingensis_DFA.sorted.fasta...
+Number of sequences (bp) added to database: 10 ( 35488367 bp )
+RepeatModeler Version 2.0.5
+===========================
+Using output directory = /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA/RM_1033807.FriMay101205372024
+Search Engine = rmblast 2.14.1+
+Threads = 16
+Dependencies: TRF 4.09, RECON , RepeatScout 1.0.6, RepeatMasker 4.1.5
+LTR Structural Analysis: Enabled ( GenomeTools 1.6.5, LTR_Retriever ,
+                                   Ninja 0.97-cluster_only, MAFFT 7.520,
+                                   CD-HIT 4.8.1 )
+Random Number Seed: 1715367936
+Database = /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA/Aspergillus_tubingensis_DFA .
+  - Sequences = 10
+  - Bases = 35488367
+Storage Throughput = fair ( 652.22 MB/s )
+
+Ready to start the sampling process.
+INFO: The runtime of RepeatModeler heavily depends on the quality of the assembly
+      and the repetitive content of the sequences.  It is not imperative
+      that RepeatModeler completes all rounds in order to obtain useful
+      results.  At the completion of each round, the files ( consensi.fa, and
+      families.stk ) found in:
+      /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA/RM_1033807.FriMay101205372024/ 
+      will contain all results produced thus far. These files may be 
+      manually copied and run through RepeatClassifier should the program
+      be terminated early.
+
+
+RepeatModeler Round # 1
+========================
+Searching for Repeats
+ -- Sampling from the database...
+   - Gathering up to 40000000 bp
+   - Final Sample Size = 35488260 bp ( 35488260 non ambiguous )
+   - Num Contigs Represented = 10
+   - Sequence extraction : 00:00:06 (hh:mm:ss) Elapsed Time
+ -- Running RepeatScout on the sequences...
+   - RepeatScout: Running build_lmer_table ( l = 14 )..
+   - RepeatScout: Running RepeatScout.. : 97 raw families identified
+   - RepeatScout: Running filtering stage.. 43 families remaining
+   - RepeatScout: 00:14:49 (hh:mm:ss) Elapsed Time
+   - Large Satellite Filtering.. : 0 found in 00:00:01 (hh:mm:ss) Elapsed Time
+   - Collecting repeat instances...: 00:00:53 (hh:mm:ss) Elapsed Time
+Refinement: 00:00:11 (hh:mm:ss) Elapsed Time
+Family Refinement: 00:00:11 (hh:mm:ss) Elapsed Time
+Round Time: 00:16:01 (hh:mm:ss) Elapsed Time : 23 families discovered.
+
+
+RepeatModeler Round # 2
+========================
+Searching for Repeats
+ -- Sampling from the database...
+   - Gathering up to 10000000 bp
+   - Sequence extraction : 00:00:02 (hh:mm:ss) Elapsed Time
+ -- Running TRFMask on the sequence...
+       323 Tandem Repeats Masked
+   - TRFMask time 00:00:21 (hh:mm:ss) Elapsed Time
+ -- Masking repeats from the previous rounds...
+    -- Collecting 248 ranges...
+       247 repeats masked totaling 31996 bp(s).
+   - TE Masking time 00:00:05 (hh:mm:ss) Elapsed Time
+ -- Sample Stats:
+       Sample Size 10019395 bp
+       Num Contigs Represented = 9
+       Non ambiguous bp:
+             Initial: 10019395 bp
+             After Masking: 9968657 bp
+             Masked: 0.51 % 
+ -- Input Database Coverage: 10019395 bp out of 35488367 bp ( 28.23 % )
+Sampling Time: 00:00:30 (hh:mm:ss) Elapsed Time
+Running all-by-other comparisons...
+  - Total Comparisons = 31375
+        0% completed,  00:4:09 (hh:mm:ss) est. time remaining.
+        1% completed,  00:5:09 (hh:mm:ss) est. time remaining.
+        2% completed,  00:4:47 (hh:mm:ss) est. time remaining.
+        3% completed,  00:4:35 (hh:mm:ss) est. time remaining.
+        3% completed,  00:4:27 (hh:mm:ss) est. time remaining.
+        4% completed,  00:4:41 (hh:mm:ss) est. time remaining.
+        5% completed,  00:4:34 (hh:mm:ss) est. time remaining.
+        6% completed,  00:4:28 (hh:mm:ss) est. time remaining.
+        7% completed,  00:4:23 (hh:mm:ss) est. time remaining.
+        7% completed,  00:4:30 (hh:mm:ss) est. time remaining.
+        8% completed,  00:4:26 (hh:mm:ss) est. time remaining.
+        9% completed,  00:4:21 (hh:mm:ss) est. time remaining.
+       10% completed,  00:4:26 (hh:mm:ss) est. time remaining.
+       10% completed,  00:4:22 (hh:mm:ss) est. time remaining.
+       11% completed,  00:22:26 (hh:mm:ss) est. time remaining.
+       12% completed,  00:21:08 (hh:mm:ss) est. time remaining.
+       13% completed,  00:20:32 (hh:mm:ss) est. time remaining.
+       13% completed,  00:19:28 (hh:mm:ss) est. time remaining.
+       14% completed,  00:18:31 (hh:mm:ss) est. time remaining.
+       15% completed,  00:17:40 (hh:mm:ss) est. time remaining.
+       16% completed,  00:16:58 (hh:mm:ss) est. time remaining.
+       16% completed,  00:16:16 (hh:mm:ss) est. time remaining.
+       17% completed,  00:15:36 (hh:mm:ss) est. time remaining.
+       18% completed,  00:15:00 (hh:mm:ss) est. time remaining.
+       18% completed,  00:14:27 (hh:mm:ss) est. time remaining.
+       19% completed,  00:13:56 (hh:mm:ss) est. time remaining.
+       20% completed,  00:13:27 (hh:mm:ss) est. time remaining.
+       21% completed,  00:13:01 (hh:mm:ss) est. time remaining.
+       21% completed,  00:12:36 (hh:mm:ss) est. time remaining.
+       22% completed,  00:12:16 (hh:mm:ss) est. time remaining.
+       23% completed,  00:11:54 (hh:mm:ss) est. time remaining.
+       23% completed,  00:11:49 (hh:mm:ss) est. time remaining.
+       24% completed,  00:11:29 (hh:mm:ss) est. time remaining.
+       25% completed,  00:11:10 (hh:mm:ss) est. time remaining.
+       25% completed,  00:10:52 (hh:mm:ss) est. time remaining.
+       26% completed,  00:10:34 (hh:mm:ss) est. time remaining.
+       27% completed,  00:10:18 (hh:mm:ss) est. time remaining.
+       28% completed,  00:10:03 (hh:mm:ss) est. time remaining.
+       28% completed,  00:9:48 (hh:mm:ss) est. time remaining.
+       29% completed,  00:9:34 (hh:mm:ss) est. time remaining.
+       30% completed,  00:9:20 (hh:mm:ss) est. time remaining.
+       30% completed,  00:9:07 (hh:mm:ss) est. time remaining.
+       31% completed,  00:8:55 (hh:mm:ss) est. time remaining.
+       32% completed,  00:8:43 (hh:mm:ss) est. time remaining.
+       32% completed,  00:8:32 (hh:mm:ss) est. time remaining.
+       33% completed,  00:8:21 (hh:mm:ss) est. time remaining.
+       34% completed,  00:8:12 (hh:mm:ss) est. time remaining.
+       34% completed,  00:8:00 (hh:mm:ss) est. time remaining.
+       35% completed,  00:7:51 (hh:mm:ss) est. time remaining.
+       35% completed,  00:7:41 (hh:mm:ss) est. time remaining.
+       36% completed,  00:7:32 (hh:mm:ss) est. time remaining.
+       37% completed,  00:7:23 (hh:mm:ss) est. time remaining.
+       37% completed,  00:7:15 (hh:mm:ss) est. time remaining.
+       38% completed,  00:7:07 (hh:mm:ss) est. time remaining.
+       39% completed,  00:16:24 (hh:mm:ss) est. time remaining.
+       39% completed,  00:20:35 (hh:mm:ss) est. time remaining.
+       40% completed,  00:20:05 (hh:mm:ss) est. time remaining.
+       40% completed,  00:19:38 (hh:mm:ss) est. time remaining.
+       41% completed,  00:19:11 (hh:mm:ss) est. time remaining.
+       42% completed,  00:18:46 (hh:mm:ss) est. time remaining.
+       42% completed,  00:18:21 (hh:mm:ss) est. time remaining.
+       43% completed,  00:17:57 (hh:mm:ss) est. time remaining.
+       43% completed,  00:17:33 (hh:mm:ss) est. time remaining.
+       44% completed,  00:17:49 (hh:mm:ss) est. time remaining.
+       45% completed,  00:17:26 (hh:mm:ss) est. time remaining.
+       45% completed,  00:17:04 (hh:mm:ss) est. time remaining.
+       46% completed,  00:16:42 (hh:mm:ss) est. time remaining.
+       46% completed,  00:16:20 (hh:mm:ss) est. time remaining.
+       47% completed,  00:16:00 (hh:mm:ss) est. time remaining.
+       48% completed,  00:22:01 (hh:mm:ss) est. time remaining.
+       48% completed,  00:21:32 (hh:mm:ss) est. time remaining.
+       49% completed,  00:21:05 (hh:mm:ss) est. time remaining.
+       49% completed,  00:20:39 (hh:mm:ss) est. time remaining.
+       50% completed,  00:20:13 (hh:mm:ss) est. time remaining.
+       50% completed,  00:19:47 (hh:mm:ss) est. time remaining.
+       51% completed,  00:19:23 (hh:mm:ss) est. time remaining.
+       52% completed,  00:18:59 (hh:mm:ss) est. time remaining.
+       52% completed,  00:18:35 (hh:mm:ss) est. time remaining.
+       53% completed,  00:18:13 (hh:mm:ss) est. time remaining.
+       53% completed,  00:17:51 (hh:mm:ss) est. time remaining.
+       54% completed,  00:17:29 (hh:mm:ss) est. time remaining.
+       54% completed,  00:17:07 (hh:mm:ss) est. time remaining.
+       55% completed,  00:16:47 (hh:mm:ss) est. time remaining.
+       55% completed,  00:16:27 (hh:mm:ss) est. time remaining.
+       56% completed,  00:16:07 (hh:mm:ss) est. time remaining.
+       56% completed,  00:15:48 (hh:mm:ss) est. time remaining.
+       57% completed,  00:15:29 (hh:mm:ss) est. time remaining.
+       57% completed,  00:15:11 (hh:mm:ss) est. time remaining.
+       58% completed,  00:14:52 (hh:mm:ss) est. time remaining.
+       58% completed,  00:14:35 (hh:mm:ss) est. time remaining.
+       59% completed,  00:14:18 (hh:mm:ss) est. time remaining.
+       59% completed,  00:14:01 (hh:mm:ss) est. time remaining.
+       60% completed,  00:13:45 (hh:mm:ss) est. time remaining.
+       60% completed,  00:13:29 (hh:mm:ss) est. time remaining.
+       61% completed,  00:13:13 (hh:mm:ss) est. time remaining.
+       61% completed,  00:12:57 (hh:mm:ss) est. time remaining.
+       62% completed,  00:12:42 (hh:mm:ss) est. time remaining.
+       62% completed,  00:12:27 (hh:mm:ss) est. time remaining.
+       63% completed,  00:12:13 (hh:mm:ss) est. time remaining.
+       63% completed,  00:11:59 (hh:mm:ss) est. time remaining.
+       64% completed,  00:11:45 (hh:mm:ss) est. time remaining.
+       64% completed,  00:12:42 (hh:mm:ss) est. time remaining.
+       65% completed,  00:12:27 (hh:mm:ss) est. time remaining.
+       65% completed,  00:12:12 (hh:mm:ss) est. time remaining.
+       66% completed,  00:11:58 (hh:mm:ss) est. time remaining.
+       66% completed,  00:11:44 (hh:mm:ss) est. time remaining.
+       67% completed,  00:11:31 (hh:mm:ss) est. time remaining.
+       67% completed,  00:11:17 (hh:mm:ss) est. time remaining.
+       68% completed,  00:11:03 (hh:mm:ss) est. time remaining.
+       68% completed,  00:10:51 (hh:mm:ss) est. time remaining.
+       68% completed,  00:11:01 (hh:mm:ss) est. time remaining.
+       69% completed,  00:10:48 (hh:mm:ss) est. time remaining.
+       69% completed,  00:10:36 (hh:mm:ss) est. time remaining.
+       70% completed,  00:10:23 (hh:mm:ss) est. time remaining.
+       70% completed,  00:10:11 (hh:mm:ss) est. time remaining.
+       71% completed,  00:9:59 (hh:mm:ss) est. time remaining.
+       71% completed,  00:9:47 (hh:mm:ss) est. time remaining.
+       72% completed,  00:9:35 (hh:mm:ss) est. time remaining.
+       72% completed,  00:9:24 (hh:mm:ss) est. time remaining.
+       72% completed,  00:9:13 (hh:mm:ss) est. time remaining.
+       73% completed,  00:9:01 (hh:mm:ss) est. time remaining.
+       73% completed,  00:8:51 (hh:mm:ss) est. time remaining.
+       74% completed,  00:8:40 (hh:mm:ss) est. time remaining.
+       74% completed,  00:8:30 (hh:mm:ss) est. time remaining.
+       74% completed,  00:8:20 (hh:mm:ss) est. time remaining.
+       75% completed,  00:8:10 (hh:mm:ss) est. time remaining.
+       75% completed,  00:8:00 (hh:mm:ss) est. time remaining.
+       76% completed,  00:7:50 (hh:mm:ss) est. time remaining.
+       76% completed,  00:7:40 (hh:mm:ss) est. time remaining.
+       76% completed,  00:7:31 (hh:mm:ss) est. time remaining.
+       77% completed,  00:7:21 (hh:mm:ss) est. time remaining.
+       77% completed,  00:7:12 (hh:mm:ss) est. time remaining.
+       77% completed,  00:7:03 (hh:mm:ss) est. time remaining.
+       78% completed,  00:6:55 (hh:mm:ss) est. time remaining.
+       78% completed,  00:6:46 (hh:mm:ss) est. time remaining.
+       79% completed,  00:6:37 (hh:mm:ss) est. time remaining.
+       79% completed,  00:6:29 (hh:mm:ss) est. time remaining.
+       79% completed,  00:6:53 (hh:mm:ss) est. time remaining.
+       80% completed,  00:7:43 (hh:mm:ss) est. time remaining.
+       80% completed,  00:7:33 (hh:mm:ss) est. time remaining.
+       80% completed,  00:7:24 (hh:mm:ss) est. time remaining.
+       81% completed,  00:7:23 (hh:mm:ss) est. time remaining.
+       81% completed,  00:7:14 (hh:mm:ss) est. time remaining.
+       81% completed,  00:7:04 (hh:mm:ss) est. time remaining.
+       82% completed,  00:6:55 (hh:mm:ss) est. time remaining.
+       82% completed,  00:6:45 (hh:mm:ss) est. time remaining.
+       82% completed,  00:6:36 (hh:mm:ss) est. time remaining.
+       83% completed,  00:6:27 (hh:mm:ss) est. time remaining.
+       83% completed,  00:6:22 (hh:mm:ss) est. time remaining.
+       83% completed,  00:6:13 (hh:mm:ss) est. time remaining.
+       84% completed,  00:6:05 (hh:mm:ss) est. time remaining.
+       84% completed,  00:5:56 (hh:mm:ss) est. time remaining.
+       84% completed,  00:6:25 (hh:mm:ss) est. time remaining.
+       85% completed,  00:6:16 (hh:mm:ss) est. time remaining.
+       85% completed,  00:6:07 (hh:mm:ss) est. time remaining.
+       85% completed,  00:5:58 (hh:mm:ss) est. time remaining.
+       86% completed,  00:5:49 (hh:mm:ss) est. time remaining.
+       86% completed,  00:5:41 (hh:mm:ss) est. time remaining.
+       86% completed,  00:5:33 (hh:mm:ss) est. time remaining.
+       86% completed,  00:5:25 (hh:mm:ss) est. time remaining.
+       87% completed,  00:5:17 (hh:mm:ss) est. time remaining.
+       87% completed,  00:5:19 (hh:mm:ss) est. time remaining.
+       87% completed,  00:5:11 (hh:mm:ss) est. time remaining.
+       88% completed,  00:5:03 (hh:mm:ss) est. time remaining.
+       88% completed,  00:4:56 (hh:mm:ss) est. time remaining.
+       88% completed,  00:4:48 (hh:mm:ss) est. time remaining.
+       88% completed,  00:4:40 (hh:mm:ss) est. time remaining.
+       89% completed,  00:4:33 (hh:mm:ss) est. time remaining.
+       89% completed,  00:4:26 (hh:mm:ss) est. time remaining.
+       89% completed,  00:4:19 (hh:mm:ss) est. time remaining.
+       89% completed,  00:4:12 (hh:mm:ss) est. time remaining.
+       90% completed,  00:4:05 (hh:mm:ss) est. time remaining.
+       90% completed,  00:3:58 (hh:mm:ss) est. time remaining.
+       90% completed,  00:3:51 (hh:mm:ss) est. time remaining.
+       90% completed,  00:3:45 (hh:mm:ss) est. time remaining.
+       91% completed,  00:3:44 (hh:mm:ss) est. time remaining.
+       91% completed,  00:3:37 (hh:mm:ss) est. time remaining.
+       91% completed,  00:3:31 (hh:mm:ss) est. time remaining.
+       91% completed,  00:3:25 (hh:mm:ss) est. time remaining.
+       92% completed,  00:3:19 (hh:mm:ss) est. time remaining.
+       92% completed,  00:3:13 (hh:mm:ss) est. time remaining.
+       92% completed,  00:3:07 (hh:mm:ss) est. time remaining.
+       92% completed,  00:3:01 (hh:mm:ss) est. time remaining.
+       92% completed,  00:2:55 (hh:mm:ss) est. time remaining.
+       93% completed,  00:2:50 (hh:mm:ss) est. time remaining.
+       93% completed,  00:2:44 (hh:mm:ss) est. time remaining.
+       93% completed,  00:2:39 (hh:mm:ss) est. time remaining.
+       93% completed,  00:2:34 (hh:mm:ss) est. time remaining.
+       93% completed,  00:2:28 (hh:mm:ss) est. time remaining.
+       94% completed,  00:2:23 (hh:mm:ss) est. time remaining.
+       94% completed,  00:2:18 (hh:mm:ss) est. time remaining.
+       94% completed,  00:2:14 (hh:mm:ss) est. time remaining.
+       94% completed,  00:2:09 (hh:mm:ss) est. time remaining.
+       94% completed,  00:2:04 (hh:mm:ss) est. time remaining.
+       95% completed,  00:2:00 (hh:mm:ss) est. time remaining.
+       95% completed,  00:1:55 (hh:mm:ss) est. time remaining.
+       95% completed,  00:1:51 (hh:mm:ss) est. time remaining.
+       95% completed,  00:1:46 (hh:mm:ss) est. time remaining.
+       95% completed,  00:1:42 (hh:mm:ss) est. time remaining.
+       95% completed,  00:1:38 (hh:mm:ss) est. time remaining.
+       96% completed,  00:1:34 (hh:mm:ss) est. time remaining.
+       96% completed,  00:1:30 (hh:mm:ss) est. time remaining.
+       96% completed,  00:1:26 (hh:mm:ss) est. time remaining.
+       96% completed,  00:1:23 (hh:mm:ss) est. time remaining.
+       96% completed,  00:1:19 (hh:mm:ss) est. time remaining.
+       96% completed,  00:1:16 (hh:mm:ss) est. time remaining.
+       96% completed,  00:1:12 (hh:mm:ss) est. time remaining.
+       97% completed,  00:1:09 (hh:mm:ss) est. time remaining.
+       97% completed,  00:1:05 (hh:mm:ss) est. time remaining.
+       97% completed,  00:1:02 (hh:mm:ss) est. time remaining.
+       97% completed,  00:0:59 (hh:mm:ss) est. time remaining.
+       97% completed,  00:0:56 (hh:mm:ss) est. time remaining.
+       97% completed,  00:0:53 (hh:mm:ss) est. time remaining.
+       97% completed,  00:0:51 (hh:mm:ss) est. time remaining.
+       97% completed,  00:0:48 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:45 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:42 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:40 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:37 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:37 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:34 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:35 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:32 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:30 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:28 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:25 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:23 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:21 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:19 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:18 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:16 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:14 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:13 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:11 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:10 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:09 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:07 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:06 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:05 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:04 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:03 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:03 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:02 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:01 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:01 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+      100% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+Comparison Time: 00:45:28 (hh:mm:ss) Elapsed Time, 2539 HSPs Collected
+  - RECON: Running imagespread..
+RECON Elapsed: 00:00:00 (hh:mm:ss) Elapsed Time
+  - RECON: Running initial definition of elements ( eledef )..
+RECON Elapsed: 00:00:01 (hh:mm:ss) Elapsed Time
+  - RECON: Running re-definition of elements ( eleredef )..
+RECON Elapsed: 00:00:02 (hh:mm:ss) Elapsed Time
+  - RECON: Running re-definition of edges ( edgeredef )..
+RECON Elapsed: 00:00:03 (hh:mm:ss) Elapsed Time
+  - RECON: Running family definition ( famdef )..
+RECON Elapsed: 00:00:01 (hh:mm:ss) Elapsed Time
+  - Obtaining element sequences
+Number of families returned by RECON: 602
+Processing families with greater than 15 elements
+Instance Gathering: 00:00:00 (hh:mm:ss) Elapsed Time
+Refining 0 families
+Family Refinement: 00:00:00 (hh:mm:ss) Elapsed Time
+Round Time: 00:46:07 (hh:mm:ss) Elapsed Time : 0 families discovered.
+
+
+RepeatModeler Round # 3
+========================
+Searching for Repeats
+ -- Sampling from the database...
+   - Gathering up to 30000000 bp
+   - Sequence extraction : 00:00:05 (hh:mm:ss) Elapsed Time
+ -- Running TRFMask on the sequence...
+       816 Tandem Repeats Masked
+   - TRFMask time 00:00:45 (hh:mm:ss) Elapsed Time
+ -- Masking repeats from the previous rounds...
+    -- Collecting 508 ranges...
+       505 repeats masked totaling 68011 bp(s).
+   - TE Masking time 00:00:10 (hh:mm:ss) Elapsed Time
+ -- Sample Stats:
+       Sample Size 25468834 bp
+       Num Contigs Represented = 9
+       Non ambiguous bp:
+             Initial: 25468834 bp
+             After Masking: 25355856 bp
+             Masked: 0.44 % 
+ -- Input Database Coverage: 35488229 bp out of 35488367 bp ( 100.00 % )
+Sampling Time: 00:01:03 (hh:mm:ss) Elapsed Time
+Running all-by-other comparisons...
+  - Total Comparisons = 205120
+        0% completed,  00:31:57 (hh:mm:ss) est. time remaining.
+        0% completed,  00:31:52 (hh:mm:ss) est. time remaining.
+        0% completed,  00:30:02 (hh:mm:ss) est. time remaining.
+        1% completed,  00:30:24 (hh:mm:ss) est. time remaining.
+        1% completed,  01:43:23 (hh:mm:ss) est. time remaining.
+        1% completed,  01:30:20 (hh:mm:ss) est. time remaining.
+        2% completed,  01:21:45 (hh:mm:ss) est. time remaining.
+        2% completed,  01:14:38 (hh:mm:ss) est. time remaining.
+        2% completed,  01:9:40 (hh:mm:ss) est. time remaining.
+        3% completed,  01:5:09 (hh:mm:ss) est. time remaining.
+        3% completed,  01:1:55 (hh:mm:ss) est. time remaining.
+        3% completed,  00:58:47 (hh:mm:ss) est. time remaining.
+        4% completed,  00:56:08 (hh:mm:ss) est. time remaining.
+        4% completed,  00:54:12 (hh:mm:ss) est. time remaining.
+        4% completed,  00:52:11 (hh:mm:ss) est. time remaining.
+        4% completed,  00:50:25 (hh:mm:ss) est. time remaining.
+        5% completed,  00:48:50 (hh:mm:ss) est. time remaining.
+        5% completed,  00:53:41 (hh:mm:ss) est. time remaining.
+        5% completed,  00:52:05 (hh:mm:ss) est. time remaining.
+        6% completed,  01:4:37 (hh:mm:ss) est. time remaining.
+        6% completed,  02:16:34 (hh:mm:ss) est. time remaining.
+        6% completed,  02:11:12 (hh:mm:ss) est. time remaining.
+        7% completed,  02:6:30 (hh:mm:ss) est. time remaining.
+        7% completed,  02:1:59 (hh:mm:ss) est. time remaining.
+        7% completed,  01:57:50 (hh:mm:ss) est. time remaining.
+        7% completed,  01:54:10 (hh:mm:ss) est. time remaining.
+        8% completed,  01:50:36 (hh:mm:ss) est. time remaining.
+        8% completed,  02:27:12 (hh:mm:ss) est. time remaining.
+        8% completed,  02:22:48 (hh:mm:ss) est. time remaining.
+        9% completed,  02:18:32 (hh:mm:ss) est. time remaining.
+        9% completed,  02:14:32 (hh:mm:ss) est. time remaining.
+        9% completed,  02:10:56 (hh:mm:ss) est. time remaining.
+       10% completed,  02:7:23 (hh:mm:ss) est. time remaining.
+       10% completed,  02:4:03 (hh:mm:ss) est. time remaining.
+       10% completed,  02:0:55 (hh:mm:ss) est. time remaining.
+       10% completed,  01:57:56 (hh:mm:ss) est. time remaining.
+       11% completed,  01:55:07 (hh:mm:ss) est. time remaining.
+       11% completed,  01:52:27 (hh:mm:ss) est. time remaining.
+       11% completed,  01:49:55 (hh:mm:ss) est. time remaining.
+       12% completed,  02:23:06 (hh:mm:ss) est. time remaining.
+       12% completed,  02:19:51 (hh:mm:ss) est. time remaining.
+       12% completed,  03:2:59 (hh:mm:ss) est. time remaining.
+       12% completed,  02:58:50 (hh:mm:ss) est. time remaining.
+       13% completed,  02:54:52 (hh:mm:ss) est. time remaining.
+       13% completed,  02:51:11 (hh:mm:ss) est. time remaining.
+       13% completed,  02:49:00 (hh:mm:ss) est. time remaining.
+       14% completed,  02:45:29 (hh:mm:ss) est. time remaining.
+       14% completed,  02:42:13 (hh:mm:ss) est. time remaining.
+       14% completed,  02:38:59 (hh:mm:ss) est. time remaining.
+       15% completed,  02:35:53 (hh:mm:ss) est. time remaining.
+       15% completed,  02:32:59 (hh:mm:ss) est. time remaining.
+       15% completed,  02:30:01 (hh:mm:ss) est. time remaining.
+       15% completed,  02:27:20 (hh:mm:ss) est. time remaining.
+       16% completed,  02:24:35 (hh:mm:ss) est. time remaining.
+       16% completed,  02:22:00 (hh:mm:ss) est. time remaining.
+       16% completed,  02:19:36 (hh:mm:ss) est. time remaining.
+       17% completed,  02:17:12 (hh:mm:ss) est. time remaining.
+       17% completed,  02:15:27 (hh:mm:ss) est. time remaining.
+       17% completed,  02:42:07 (hh:mm:ss) est. time remaining.
+       17% completed,  02:39:22 (hh:mm:ss) est. time remaining.
+       18% completed,  02:36:44 (hh:mm:ss) est. time remaining.
+       18% completed,  02:34:10 (hh:mm:ss) est. time remaining.
+       18% completed,  02:31:41 (hh:mm:ss) est. time remaining.
+       18% completed,  02:29:16 (hh:mm:ss) est. time remaining.
+       19% completed,  02:26:56 (hh:mm:ss) est. time remaining.
+       19% completed,  02:24:40 (hh:mm:ss) est. time remaining.
+       19% completed,  02:22:28 (hh:mm:ss) est. time remaining.
+       20% completed,  02:20:19 (hh:mm:ss) est. time remaining.
+       20% completed,  02:18:15 (hh:mm:ss) est. time remaining.
+       20% completed,  02:16:14 (hh:mm:ss) est. time remaining.
+       20% completed,  02:14:16 (hh:mm:ss) est. time remaining.
+       21% completed,  02:12:21 (hh:mm:ss) est. time remaining.
+       21% completed,  02:10:30 (hh:mm:ss) est. time remaining.
+       21% completed,  02:8:41 (hh:mm:ss) est. time remaining.
+       22% completed,  02:6:55 (hh:mm:ss) est. time remaining.
+       22% completed,  02:5:12 (hh:mm:ss) est. time remaining.
+       22% completed,  02:3:31 (hh:mm:ss) est. time remaining.
+       22% completed,  02:1:53 (hh:mm:ss) est. time remaining.
+       23% completed,  02:3:07 (hh:mm:ss) est. time remaining.
+       23% completed,  02:1:31 (hh:mm:ss) est. time remaining.
+       23% completed,  01:59:57 (hh:mm:ss) est. time remaining.
+       23% completed,  01:58:26 (hh:mm:ss) est. time remaining.
+       24% completed,  01:56:57 (hh:mm:ss) est. time remaining.
+       24% completed,  01:55:30 (hh:mm:ss) est. time remaining.
+       24% completed,  01:54:01 (hh:mm:ss) est. time remaining.
+       25% completed,  01:52:38 (hh:mm:ss) est. time remaining.
+       25% completed,  01:51:17 (hh:mm:ss) est. time remaining.
+       25% completed,  01:49:57 (hh:mm:ss) est. time remaining.
+       25% completed,  01:49:56 (hh:mm:ss) est. time remaining.
+       26% completed,  01:48:42 (hh:mm:ss) est. time remaining.
+       26% completed,  01:47:23 (hh:mm:ss) est. time remaining.
+       26% completed,  01:46:09 (hh:mm:ss) est. time remaining.
+       26% completed,  01:44:57 (hh:mm:ss) est. time remaining.
+       27% completed,  01:43:46 (hh:mm:ss) est. time remaining.
+       27% completed,  01:42:36 (hh:mm:ss) est. time remaining.
+       27% completed,  01:42:48 (hh:mm:ss) est. time remaining.
+       27% completed,  01:41:40 (hh:mm:ss) est. time remaining.
+       28% completed,  01:40:31 (hh:mm:ss) est. time remaining.
+       28% completed,  01:39:26 (hh:mm:ss) est. time remaining.
+       28% completed,  01:38:22 (hh:mm:ss) est. time remaining.
+       29% completed,  01:37:19 (hh:mm:ss) est. time remaining.
+       29% completed,  01:36:15 (hh:mm:ss) est. time remaining.
+       29% completed,  01:35:14 (hh:mm:ss) est. time remaining.
+       29% completed,  01:34:12 (hh:mm:ss) est. time remaining.
+       30% completed,  01:33:14 (hh:mm:ss) est. time remaining.
+       30% completed,  01:32:17 (hh:mm:ss) est. time remaining.
+       30% completed,  01:31:20 (hh:mm:ss) est. time remaining.
+       30% completed,  01:30:23 (hh:mm:ss) est. time remaining.
+       31% completed,  01:29:29 (hh:mm:ss) est. time remaining.
+       31% completed,  01:28:33 (hh:mm:ss) est. time remaining.
+       31% completed,  01:27:41 (hh:mm:ss) est. time remaining.
+       31% completed,  01:26:47 (hh:mm:ss) est. time remaining.
+       32% completed,  01:25:56 (hh:mm:ss) est. time remaining.
+       32% completed,  01:25:06 (hh:mm:ss) est. time remaining.
+       32% completed,  01:24:15 (hh:mm:ss) est. time remaining.
+       32% completed,  01:23:27 (hh:mm:ss) est. time remaining.
+       33% completed,  01:22:40 (hh:mm:ss) est. time remaining.
+       33% completed,  01:21:51 (hh:mm:ss) est. time remaining.
+       33% completed,  01:21:05 (hh:mm:ss) est. time remaining.
+       33% completed,  01:20:18 (hh:mm:ss) est. time remaining.
+       34% completed,  01:19:34 (hh:mm:ss) est. time remaining.
+       34% completed,  01:18:50 (hh:mm:ss) est. time remaining.
+       34% completed,  01:18:07 (hh:mm:ss) est. time remaining.
+       34% completed,  01:17:24 (hh:mm:ss) est. time remaining.
+       35% completed,  01:16:41 (hh:mm:ss) est. time remaining.
+       35% completed,  01:17:45 (hh:mm:ss) est. time remaining.
+       35% completed,  01:17:02 (hh:mm:ss) est. time remaining.
+       35% completed,  01:16:20 (hh:mm:ss) est. time remaining.
+       36% completed,  01:15:38 (hh:mm:ss) est. time remaining.
+       36% completed,  01:14:57 (hh:mm:ss) est. time remaining.
+       36% completed,  01:14:17 (hh:mm:ss) est. time remaining.
+       36% completed,  01:17:58 (hh:mm:ss) est. time remaining.
+       37% completed,  01:17:17 (hh:mm:ss) est. time remaining.
+       37% completed,  01:16:35 (hh:mm:ss) est. time remaining.
+       37% completed,  01:15:55 (hh:mm:ss) est. time remaining.
+       37% completed,  01:15:14 (hh:mm:ss) est. time remaining.
+       38% completed,  01:14:35 (hh:mm:ss) est. time remaining.
+       38% completed,  01:13:55 (hh:mm:ss) est. time remaining.
+       38% completed,  01:13:21 (hh:mm:ss) est. time remaining.
+       38% completed,  01:12:44 (hh:mm:ss) est. time remaining.
+       39% completed,  01:12:05 (hh:mm:ss) est. time remaining.
+       39% completed,  01:11:29 (hh:mm:ss) est. time remaining.
+       39% completed,  01:10:52 (hh:mm:ss) est. time remaining.
+       39% completed,  01:10:17 (hh:mm:ss) est. time remaining.
+       40% completed,  01:9:42 (hh:mm:ss) est. time remaining.
+       40% completed,  01:9:08 (hh:mm:ss) est. time remaining.
+       40% completed,  01:8:32 (hh:mm:ss) est. time remaining.
+       40% completed,  01:7:57 (hh:mm:ss) est. time remaining.
+       41% completed,  01:7:24 (hh:mm:ss) est. time remaining.
+       41% completed,  01:6:50 (hh:mm:ss) est. time remaining.
+       41% completed,  01:6:18 (hh:mm:ss) est. time remaining.
+       41% completed,  01:5:45 (hh:mm:ss) est. time remaining.
+       42% completed,  01:5:13 (hh:mm:ss) est. time remaining.
+       42% completed,  01:4:41 (hh:mm:ss) est. time remaining.
+       42% completed,  01:4:09 (hh:mm:ss) est. time remaining.
+       42% completed,  01:3:37 (hh:mm:ss) est. time remaining.
+       43% completed,  01:3:07 (hh:mm:ss) est. time remaining.
+       43% completed,  01:2:36 (hh:mm:ss) est. time remaining.
+       43% completed,  01:2:05 (hh:mm:ss) est. time remaining.
+       43% completed,  01:1:35 (hh:mm:ss) est. time remaining.
+       43% completed,  01:1:07 (hh:mm:ss) est. time remaining.
+       44% completed,  01:0:37 (hh:mm:ss) est. time remaining.
+       44% completed,  01:0:09 (hh:mm:ss) est. time remaining.
+       44% completed,  00:59:40 (hh:mm:ss) est. time remaining.
+       44% completed,  00:59:12 (hh:mm:ss) est. time remaining.
+       45% completed,  00:58:45 (hh:mm:ss) est. time remaining.
+       45% completed,  00:58:17 (hh:mm:ss) est. time remaining.
+       45% completed,  00:57:49 (hh:mm:ss) est. time remaining.
+       45% completed,  00:57:23 (hh:mm:ss) est. time remaining.
+       46% completed,  00:56:56 (hh:mm:ss) est. time remaining.
+       46% completed,  00:56:29 (hh:mm:ss) est. time remaining.
+       46% completed,  00:56:03 (hh:mm:ss) est. time remaining.
+       46% completed,  00:55:38 (hh:mm:ss) est. time remaining.
+       46% completed,  00:55:12 (hh:mm:ss) est. time remaining.
+       47% completed,  00:54:47 (hh:mm:ss) est. time remaining.
+       47% completed,  00:54:22 (hh:mm:ss) est. time remaining.
+       47% completed,  00:53:57 (hh:mm:ss) est. time remaining.
+       47% completed,  00:53:32 (hh:mm:ss) est. time remaining.
+       48% completed,  00:53:09 (hh:mm:ss) est. time remaining.
+       48% completed,  00:52:45 (hh:mm:ss) est. time remaining.
+       48% completed,  00:52:21 (hh:mm:ss) est. time remaining.
+       48% completed,  00:51:56 (hh:mm:ss) est. time remaining.
+       48% completed,  00:51:33 (hh:mm:ss) est. time remaining.
+       49% completed,  00:51:09 (hh:mm:ss) est. time remaining.
+       49% completed,  00:50:47 (hh:mm:ss) est. time remaining.
+       49% completed,  00:50:24 (hh:mm:ss) est. time remaining.
+       49% completed,  00:50:01 (hh:mm:ss) est. time remaining.
+       50% completed,  00:49:39 (hh:mm:ss) est. time remaining.
+       50% completed,  00:49:17 (hh:mm:ss) est. time remaining.
+       50% completed,  00:48:55 (hh:mm:ss) est. time remaining.
+       50% completed,  00:48:33 (hh:mm:ss) est. time remaining.
+       50% completed,  00:48:11 (hh:mm:ss) est. time remaining.
+       51% completed,  00:47:50 (hh:mm:ss) est. time remaining.
+       51% completed,  00:47:29 (hh:mm:ss) est. time remaining.
+       51% completed,  00:47:08 (hh:mm:ss) est. time remaining.
+       51% completed,  00:46:47 (hh:mm:ss) est. time remaining.
+       52% completed,  00:46:27 (hh:mm:ss) est. time remaining.
+       52% completed,  00:46:06 (hh:mm:ss) est. time remaining.
+       52% completed,  00:45:46 (hh:mm:ss) est. time remaining.
+       52% completed,  00:45:26 (hh:mm:ss) est. time remaining.
+       52% completed,  00:45:06 (hh:mm:ss) est. time remaining.
+       53% completed,  00:44:47 (hh:mm:ss) est. time remaining.
+       53% completed,  00:44:27 (hh:mm:ss) est. time remaining.
+       53% completed,  00:44:08 (hh:mm:ss) est. time remaining.
+       53% completed,  00:43:49 (hh:mm:ss) est. time remaining.
+       53% completed,  00:43:30 (hh:mm:ss) est. time remaining.
+       54% completed,  00:43:12 (hh:mm:ss) est. time remaining.
+       54% completed,  00:42:53 (hh:mm:ss) est. time remaining.
+       54% completed,  00:42:35 (hh:mm:ss) est. time remaining.
+       54% completed,  00:42:16 (hh:mm:ss) est. time remaining.
+       55% completed,  00:41:58 (hh:mm:ss) est. time remaining.
+       55% completed,  00:41:40 (hh:mm:ss) est. time remaining.
+       55% completed,  00:41:22 (hh:mm:ss) est. time remaining.
+       55% completed,  00:41:04 (hh:mm:ss) est. time remaining.
+       55% completed,  00:40:47 (hh:mm:ss) est. time remaining.
+       56% completed,  00:40:29 (hh:mm:ss) est. time remaining.
+       56% completed,  00:40:11 (hh:mm:ss) est. time remaining.
+       56% completed,  00:44:04 (hh:mm:ss) est. time remaining.
+       56% completed,  00:43:45 (hh:mm:ss) est. time remaining.
+       56% completed,  00:43:26 (hh:mm:ss) est. time remaining.
+       57% completed,  00:43:07 (hh:mm:ss) est. time remaining.
+       57% completed,  00:42:48 (hh:mm:ss) est. time remaining.
+       57% completed,  00:42:30 (hh:mm:ss) est. time remaining.
+       57% completed,  00:42:09 (hh:mm:ss) est. time remaining.
+       57% completed,  00:41:51 (hh:mm:ss) est. time remaining.
+       58% completed,  00:41:33 (hh:mm:ss) est. time remaining.
+       58% completed,  00:41:14 (hh:mm:ss) est. time remaining.
+       58% completed,  00:40:57 (hh:mm:ss) est. time remaining.
+       58% completed,  00:40:39 (hh:mm:ss) est. time remaining.
+       58% completed,  00:40:21 (hh:mm:ss) est. time remaining.
+       59% completed,  00:40:04 (hh:mm:ss) est. time remaining.
+       59% completed,  00:39:46 (hh:mm:ss) est. time remaining.
+       59% completed,  00:39:29 (hh:mm:ss) est. time remaining.
+       59% completed,  00:39:12 (hh:mm:ss) est. time remaining.
+       59% completed,  00:38:55 (hh:mm:ss) est. time remaining.
+       60% completed,  00:38:39 (hh:mm:ss) est. time remaining.
+       60% completed,  00:38:23 (hh:mm:ss) est. time remaining.
+       60% completed,  00:38:06 (hh:mm:ss) est. time remaining.
+       60% completed,  00:37:50 (hh:mm:ss) est. time remaining.
+       60% completed,  00:37:33 (hh:mm:ss) est. time remaining.
+       61% completed,  00:37:17 (hh:mm:ss) est. time remaining.
+       61% completed,  00:37:01 (hh:mm:ss) est. time remaining.
+       61% completed,  00:36:45 (hh:mm:ss) est. time remaining.
+       61% completed,  00:36:29 (hh:mm:ss) est. time remaining.
+       61% completed,  00:36:14 (hh:mm:ss) est. time remaining.
+       62% completed,  00:35:58 (hh:mm:ss) est. time remaining.
+       62% completed,  00:37:45 (hh:mm:ss) est. time remaining.
+       62% completed,  00:37:29 (hh:mm:ss) est. time remaining.
+       62% completed,  00:37:12 (hh:mm:ss) est. time remaining.
+       62% completed,  00:36:56 (hh:mm:ss) est. time remaining.
+       63% completed,  00:36:41 (hh:mm:ss) est. time remaining.
+       63% completed,  00:36:25 (hh:mm:ss) est. time remaining.
+       63% completed,  00:36:09 (hh:mm:ss) est. time remaining.
+       63% completed,  00:35:53 (hh:mm:ss) est. time remaining.
+       63% completed,  00:35:38 (hh:mm:ss) est. time remaining.
+       63% completed,  00:35:22 (hh:mm:ss) est. time remaining.
+       64% completed,  00:35:07 (hh:mm:ss) est. time remaining.
+       64% completed,  00:34:52 (hh:mm:ss) est. time remaining.
+       64% completed,  00:34:37 (hh:mm:ss) est. time remaining.
+       64% completed,  00:34:22 (hh:mm:ss) est. time remaining.
+       64% completed,  00:34:08 (hh:mm:ss) est. time remaining.
+       65% completed,  00:33:53 (hh:mm:ss) est. time remaining.
+       65% completed,  00:33:38 (hh:mm:ss) est. time remaining.
+       65% completed,  00:33:24 (hh:mm:ss) est. time remaining.
+       65% completed,  00:33:10 (hh:mm:ss) est. time remaining.
+       65% completed,  00:32:55 (hh:mm:ss) est. time remaining.
+       65% completed,  00:32:41 (hh:mm:ss) est. time remaining.
+       66% completed,  00:32:27 (hh:mm:ss) est. time remaining.
+       66% completed,  00:32:13 (hh:mm:ss) est. time remaining.
+       66% completed,  00:31:59 (hh:mm:ss) est. time remaining.
+       66% completed,  00:31:45 (hh:mm:ss) est. time remaining.
+       66% completed,  00:31:32 (hh:mm:ss) est. time remaining.
+       67% completed,  00:31:18 (hh:mm:ss) est. time remaining.
+       67% completed,  00:31:04 (hh:mm:ss) est. time remaining.
+       67% completed,  00:30:50 (hh:mm:ss) est. time remaining.
+       67% completed,  00:30:37 (hh:mm:ss) est. time remaining.
+       67% completed,  00:30:24 (hh:mm:ss) est. time remaining.
+       67% completed,  00:30:11 (hh:mm:ss) est. time remaining.
+       68% completed,  00:29:58 (hh:mm:ss) est. time remaining.
+       68% completed,  00:29:45 (hh:mm:ss) est. time remaining.
+       68% completed,  00:29:32 (hh:mm:ss) est. time remaining.
+       68% completed,  00:30:32 (hh:mm:ss) est. time remaining.
+       68% completed,  00:30:19 (hh:mm:ss) est. time remaining.
+       69% completed,  00:30:06 (hh:mm:ss) est. time remaining.
+       69% completed,  00:29:52 (hh:mm:ss) est. time remaining.
+       69% completed,  00:29:40 (hh:mm:ss) est. time remaining.
+       69% completed,  00:29:27 (hh:mm:ss) est. time remaining.
+       69% completed,  00:29:14 (hh:mm:ss) est. time remaining.
+       69% completed,  00:29:01 (hh:mm:ss) est. time remaining.
+       70% completed,  00:28:49 (hh:mm:ss) est. time remaining.
+       70% completed,  00:28:36 (hh:mm:ss) est. time remaining.
+       70% completed,  00:28:23 (hh:mm:ss) est. time remaining.
+       70% completed,  00:28:11 (hh:mm:ss) est. time remaining.
+       70% completed,  00:27:58 (hh:mm:ss) est. time remaining.
+       70% completed,  00:27:46 (hh:mm:ss) est. time remaining.
+       71% completed,  00:27:34 (hh:mm:ss) est. time remaining.
+       71% completed,  00:27:22 (hh:mm:ss) est. time remaining.
+       71% completed,  00:27:09 (hh:mm:ss) est. time remaining.
+       71% completed,  00:26:57 (hh:mm:ss) est. time remaining.
+       71% completed,  00:26:45 (hh:mm:ss) est. time remaining.
+       71% completed,  00:26:33 (hh:mm:ss) est. time remaining.
+       72% completed,  00:26:21 (hh:mm:ss) est. time remaining.
+       72% completed,  00:26:10 (hh:mm:ss) est. time remaining.
+       72% completed,  00:25:58 (hh:mm:ss) est. time remaining.
+       72% completed,  00:25:47 (hh:mm:ss) est. time remaining.
+       72% completed,  00:25:35 (hh:mm:ss) est. time remaining.
+       72% completed,  00:25:24 (hh:mm:ss) est. time remaining.
+       73% completed,  00:25:12 (hh:mm:ss) est. time remaining.
+       73% completed,  00:25:01 (hh:mm:ss) est. time remaining.
+       73% completed,  00:24:50 (hh:mm:ss) est. time remaining.
+       73% completed,  00:24:39 (hh:mm:ss) est. time remaining.
+       73% completed,  00:24:28 (hh:mm:ss) est. time remaining.
+       73% completed,  00:24:17 (hh:mm:ss) est. time remaining.
+       74% completed,  00:24:06 (hh:mm:ss) est. time remaining.
+       74% completed,  00:23:55 (hh:mm:ss) est. time remaining.
+       74% completed,  00:23:44 (hh:mm:ss) est. time remaining.
+       74% completed,  00:23:33 (hh:mm:ss) est. time remaining.
+       74% completed,  00:23:23 (hh:mm:ss) est. time remaining.
+       74% completed,  00:23:12 (hh:mm:ss) est. time remaining.
+       74% completed,  00:23:01 (hh:mm:ss) est. time remaining.
+       75% completed,  00:22:51 (hh:mm:ss) est. time remaining.
+       75% completed,  00:22:40 (hh:mm:ss) est. time remaining.
+       75% completed,  00:22:30 (hh:mm:ss) est. time remaining.
+       75% completed,  00:22:20 (hh:mm:ss) est. time remaining.
+       75% completed,  00:22:09 (hh:mm:ss) est. time remaining.
+       75% completed,  00:22:04 (hh:mm:ss) est. time remaining.
+       76% completed,  00:21:54 (hh:mm:ss) est. time remaining.
+       76% completed,  00:21:58 (hh:mm:ss) est. time remaining.
+       76% completed,  00:21:48 (hh:mm:ss) est. time remaining.
+       76% completed,  00:21:38 (hh:mm:ss) est. time remaining.
+       76% completed,  00:21:28 (hh:mm:ss) est. time remaining.
+       76% completed,  00:21:18 (hh:mm:ss) est. time remaining.
+       76% completed,  00:21:08 (hh:mm:ss) est. time remaining.
+       77% completed,  00:20:58 (hh:mm:ss) est. time remaining.
+       77% completed,  00:20:48 (hh:mm:ss) est. time remaining.
+       77% completed,  00:20:39 (hh:mm:ss) est. time remaining.
+       77% completed,  00:20:29 (hh:mm:ss) est. time remaining.
+       77% completed,  00:20:19 (hh:mm:ss) est. time remaining.
+       77% completed,  00:20:10 (hh:mm:ss) est. time remaining.
+       77% completed,  00:20:00 (hh:mm:ss) est. time remaining.
+       78% completed,  00:19:51 (hh:mm:ss) est. time remaining.
+       78% completed,  00:19:41 (hh:mm:ss) est. time remaining.
+       78% completed,  00:19:32 (hh:mm:ss) est. time remaining.
+       78% completed,  00:19:45 (hh:mm:ss) est. time remaining.
+       78% completed,  00:19:35 (hh:mm:ss) est. time remaining.
+       78% completed,  00:19:26 (hh:mm:ss) est. time remaining.
+       79% completed,  00:19:17 (hh:mm:ss) est. time remaining.
+       79% completed,  00:19:07 (hh:mm:ss) est. time remaining.
+       79% completed,  00:18:58 (hh:mm:ss) est. time remaining.
+       79% completed,  00:18:49 (hh:mm:ss) est. time remaining.
+       79% completed,  00:18:40 (hh:mm:ss) est. time remaining.
+       79% completed,  00:18:31 (hh:mm:ss) est. time remaining.
+       79% completed,  00:18:22 (hh:mm:ss) est. time remaining.
+       79% completed,  00:18:13 (hh:mm:ss) est. time remaining.
+       80% completed,  00:18:04 (hh:mm:ss) est. time remaining.
+       80% completed,  00:17:55 (hh:mm:ss) est. time remaining.
+       80% completed,  00:17:46 (hh:mm:ss) est. time remaining.
+       80% completed,  00:17:38 (hh:mm:ss) est. time remaining.
+       80% completed,  00:17:29 (hh:mm:ss) est. time remaining.
+       80% completed,  00:17:21 (hh:mm:ss) est. time remaining.
+       80% completed,  00:17:12 (hh:mm:ss) est. time remaining.
+       81% completed,  00:17:03 (hh:mm:ss) est. time remaining.
+       81% completed,  00:16:55 (hh:mm:ss) est. time remaining.
+       81% completed,  00:16:47 (hh:mm:ss) est. time remaining.
+       81% completed,  00:16:38 (hh:mm:ss) est. time remaining.
+       81% completed,  00:16:30 (hh:mm:ss) est. time remaining.
+       81% completed,  00:16:22 (hh:mm:ss) est. time remaining.
+       81% completed,  00:16:14 (hh:mm:ss) est. time remaining.
+       82% completed,  00:16:05 (hh:mm:ss) est. time remaining.
+       82% completed,  00:15:57 (hh:mm:ss) est. time remaining.
+       82% completed,  00:15:49 (hh:mm:ss) est. time remaining.
+       82% completed,  00:15:41 (hh:mm:ss) est. time remaining.
+       82% completed,  00:15:33 (hh:mm:ss) est. time remaining.
+       82% completed,  00:16:12 (hh:mm:ss) est. time remaining.
+       82% completed,  00:16:03 (hh:mm:ss) est. time remaining.
+       82% completed,  00:15:55 (hh:mm:ss) est. time remaining.
+       83% completed,  00:15:47 (hh:mm:ss) est. time remaining.
+       83% completed,  00:15:39 (hh:mm:ss) est. time remaining.
+       83% completed,  00:15:31 (hh:mm:ss) est. time remaining.
+       83% completed,  00:15:23 (hh:mm:ss) est. time remaining.
+       83% completed,  00:15:15 (hh:mm:ss) est. time remaining.
+       83% completed,  00:15:07 (hh:mm:ss) est. time remaining.
+       83% completed,  00:14:59 (hh:mm:ss) est. time remaining.
+       83% completed,  00:14:51 (hh:mm:ss) est. time remaining.
+       84% completed,  00:14:43 (hh:mm:ss) est. time remaining.
+       84% completed,  00:14:36 (hh:mm:ss) est. time remaining.
+       84% completed,  00:14:28 (hh:mm:ss) est. time remaining.
+       84% completed,  00:14:20 (hh:mm:ss) est. time remaining.
+       84% completed,  00:14:13 (hh:mm:ss) est. time remaining.
+       84% completed,  00:14:05 (hh:mm:ss) est. time remaining.
+       84% completed,  00:13:58 (hh:mm:ss) est. time remaining.
+       84% completed,  00:13:50 (hh:mm:ss) est. time remaining.
+       85% completed,  00:13:43 (hh:mm:ss) est. time remaining.
+       85% completed,  00:13:37 (hh:mm:ss) est. time remaining.
+       85% completed,  00:13:29 (hh:mm:ss) est. time remaining.
+       85% completed,  00:13:22 (hh:mm:ss) est. time remaining.
+       85% completed,  00:13:15 (hh:mm:ss) est. time remaining.
+       85% completed,  00:13:08 (hh:mm:ss) est. time remaining.
+       85% completed,  00:13:08 (hh:mm:ss) est. time remaining.
+       85% completed,  00:13:01 (hh:mm:ss) est. time remaining.
+       86% completed,  00:12:54 (hh:mm:ss) est. time remaining.
+       86% completed,  00:12:46 (hh:mm:ss) est. time remaining.
+       86% completed,  00:12:39 (hh:mm:ss) est. time remaining.
+       86% completed,  00:12:32 (hh:mm:ss) est. time remaining.
+       86% completed,  00:12:25 (hh:mm:ss) est. time remaining.
+       86% completed,  00:12:18 (hh:mm:ss) est. time remaining.
+       86% completed,  00:12:11 (hh:mm:ss) est. time remaining.
+       86% completed,  00:12:04 (hh:mm:ss) est. time remaining.
+       86% completed,  00:11:58 (hh:mm:ss) est. time remaining.
+       87% completed,  00:11:51 (hh:mm:ss) est. time remaining.
+       87% completed,  00:11:44 (hh:mm:ss) est. time remaining.
+       87% completed,  00:11:38 (hh:mm:ss) est. time remaining.
+       87% completed,  00:11:31 (hh:mm:ss) est. time remaining.
+       87% completed,  00:11:24 (hh:mm:ss) est. time remaining.
+       87% completed,  00:11:18 (hh:mm:ss) est. time remaining.
+       87% completed,  00:11:11 (hh:mm:ss) est. time remaining.
+       87% completed,  00:11:05 (hh:mm:ss) est. time remaining.
+       87% completed,  00:10:58 (hh:mm:ss) est. time remaining.
+       88% completed,  00:10:52 (hh:mm:ss) est. time remaining.
+       88% completed,  00:10:45 (hh:mm:ss) est. time remaining.
+       88% completed,  00:10:39 (hh:mm:ss) est. time remaining.
+       88% completed,  00:10:33 (hh:mm:ss) est. time remaining.
+       88% completed,  00:10:27 (hh:mm:ss) est. time remaining.
+       88% completed,  00:10:20 (hh:mm:ss) est. time remaining.
+       88% completed,  00:10:14 (hh:mm:ss) est. time remaining.
+       88% completed,  00:10:08 (hh:mm:ss) est. time remaining.
+       88% completed,  00:10:02 (hh:mm:ss) est. time remaining.
+       88% completed,  00:9:56 (hh:mm:ss) est. time remaining.
+       89% completed,  00:9:50 (hh:mm:ss) est. time remaining.
+       89% completed,  00:9:44 (hh:mm:ss) est. time remaining.
+       89% completed,  00:9:38 (hh:mm:ss) est. time remaining.
+       89% completed,  00:9:32 (hh:mm:ss) est. time remaining.
+       89% completed,  00:9:32 (hh:mm:ss) est. time remaining.
+       89% completed,  00:9:26 (hh:mm:ss) est. time remaining.
+       89% completed,  00:9:20 (hh:mm:ss) est. time remaining.
+       89% completed,  00:9:14 (hh:mm:ss) est. time remaining.
+       89% completed,  00:9:08 (hh:mm:ss) est. time remaining.
+       90% completed,  00:9:03 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:57 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:51 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:47 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:41 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:36 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:30 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:25 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:19 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:14 (hh:mm:ss) est. time remaining.
+       90% completed,  00:8:08 (hh:mm:ss) est. time remaining.
+       91% completed,  00:8:03 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:58 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:52 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:47 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:42 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:37 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:31 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:40 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:35 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:30 (hh:mm:ss) est. time remaining.
+       91% completed,  00:7:27 (hh:mm:ss) est. time remaining.
+       92% completed,  00:7:27 (hh:mm:ss) est. time remaining.
+       92% completed,  00:7:22 (hh:mm:ss) est. time remaining.
+       92% completed,  00:7:17 (hh:mm:ss) est. time remaining.
+       92% completed,  00:7:12 (hh:mm:ss) est. time remaining.
+       92% completed,  00:7:07 (hh:mm:ss) est. time remaining.
+       92% completed,  00:7:02 (hh:mm:ss) est. time remaining.
+       92% completed,  00:6:57 (hh:mm:ss) est. time remaining.
+       92% completed,  00:6:52 (hh:mm:ss) est. time remaining.
+       92% completed,  00:6:47 (hh:mm:ss) est. time remaining.
+       92% completed,  00:6:42 (hh:mm:ss) est. time remaining.
+       92% completed,  00:6:37 (hh:mm:ss) est. time remaining.
+       92% completed,  00:6:32 (hh:mm:ss) est. time remaining.
+       93% completed,  00:6:27 (hh:mm:ss) est. time remaining.
+       93% completed,  00:6:22 (hh:mm:ss) est. time remaining.
+       93% completed,  00:6:18 (hh:mm:ss) est. time remaining.
+       93% completed,  00:6:13 (hh:mm:ss) est. time remaining.
+       93% completed,  00:6:08 (hh:mm:ss) est. time remaining.
+       93% completed,  00:6:03 (hh:mm:ss) est. time remaining.
+       93% completed,  00:5:59 (hh:mm:ss) est. time remaining.
+       93% completed,  00:5:54 (hh:mm:ss) est. time remaining.
+       93% completed,  00:5:50 (hh:mm:ss) est. time remaining.
+       93% completed,  00:5:45 (hh:mm:ss) est. time remaining.
+       93% completed,  00:5:41 (hh:mm:ss) est. time remaining.
+       93% completed,  00:5:36 (hh:mm:ss) est. time remaining.
+       94% completed,  00:5:32 (hh:mm:ss) est. time remaining.
+       94% completed,  00:5:27 (hh:mm:ss) est. time remaining.
+       94% completed,  00:5:23 (hh:mm:ss) est. time remaining.
+       94% completed,  00:5:19 (hh:mm:ss) est. time remaining.
+       94% completed,  00:5:14 (hh:mm:ss) est. time remaining.
+       94% completed,  00:5:10 (hh:mm:ss) est. time remaining.
+       94% completed,  00:5:06 (hh:mm:ss) est. time remaining.
+       94% completed,  00:5:02 (hh:mm:ss) est. time remaining.
+       94% completed,  00:4:57 (hh:mm:ss) est. time remaining.
+       94% completed,  00:4:53 (hh:mm:ss) est. time remaining.
+       94% completed,  00:4:49 (hh:mm:ss) est. time remaining.
+       94% completed,  00:4:45 (hh:mm:ss) est. time remaining.
+       94% completed,  00:4:41 (hh:mm:ss) est. time remaining.
+       94% completed,  00:4:37 (hh:mm:ss) est. time remaining.
+       95% completed,  00:4:33 (hh:mm:ss) est. time remaining.
+       95% completed,  00:4:29 (hh:mm:ss) est. time remaining.
+       95% completed,  00:4:25 (hh:mm:ss) est. time remaining.
+       95% completed,  00:4:21 (hh:mm:ss) est. time remaining.
+       95% completed,  00:4:18 (hh:mm:ss) est. time remaining.
+       95% completed,  00:4:14 (hh:mm:ss) est. time remaining.
+       95% completed,  00:4:10 (hh:mm:ss) est. time remaining.
+       95% completed,  00:4:06 (hh:mm:ss) est. time remaining.
+       95% completed,  00:4:02 (hh:mm:ss) est. time remaining.
+       95% completed,  00:3:59 (hh:mm:ss) est. time remaining.
+       95% completed,  00:3:55 (hh:mm:ss) est. time remaining.
+       95% completed,  00:3:51 (hh:mm:ss) est. time remaining.
+       95% completed,  00:3:48 (hh:mm:ss) est. time remaining.
+       95% completed,  00:3:44 (hh:mm:ss) est. time remaining.
+       95% completed,  00:3:41 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:37 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:34 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:30 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:27 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:23 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:20 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:17 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:13 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:10 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:07 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:04 (hh:mm:ss) est. time remaining.
+       96% completed,  00:3:00 (hh:mm:ss) est. time remaining.
+       96% completed,  00:2:57 (hh:mm:ss) est. time remaining.
+       96% completed,  00:2:54 (hh:mm:ss) est. time remaining.
+       96% completed,  00:2:51 (hh:mm:ss) est. time remaining.
+       96% completed,  00:2:48 (hh:mm:ss) est. time remaining.
+       96% completed,  00:2:45 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:42 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:39 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:36 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:33 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:30 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:27 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:25 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:22 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:21 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:18 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:15 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:13 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:10 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:07 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:05 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:02 (hh:mm:ss) est. time remaining.
+       97% completed,  00:2:00 (hh:mm:ss) est. time remaining.
+       97% completed,  00:1:57 (hh:mm:ss) est. time remaining.
+       97% completed,  00:1:55 (hh:mm:ss) est. time remaining.
+       97% completed,  00:1:52 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:50 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:47 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:45 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:42 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:40 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:38 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:36 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:34 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:31 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:29 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:27 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:25 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:23 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:21 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:19 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:17 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:15 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:13 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:11 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:09 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:07 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:05 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:03 (hh:mm:ss) est. time remaining.
+       98% completed,  00:1:01 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:59 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:57 (hh:mm:ss) est. time remaining.
+       98% completed,  00:0:56 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:54 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:52 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:51 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:49 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:47 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:46 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:44 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:43 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:41 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:40 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:38 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:37 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:35 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:34 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:33 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:31 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:30 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:29 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:27 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:26 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:25 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:24 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:23 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:22 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:21 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:19 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:18 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:17 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:17 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:16 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:15 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:14 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:13 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:12 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:11 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:10 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:10 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:09 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:08 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:08 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:07 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:06 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:06 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:05 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:05 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:04 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:04 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:03 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:03 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:02 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:02 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:02 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:01 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:01 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:01 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+       99% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+      100% completed,  00:0:00 (hh:mm:ss) est. time remaining.
+Comparison Time: 01:32:28 (hh:mm:ss) Elapsed Time, 9246 HSPs Collected
+  - RECON: Running imagespread..
+RECON Elapsed: 00:00:00 (hh:mm:ss) Elapsed Time
+  - RECON: Running initial definition of elements ( eledef )..
+RECON Elapsed: 00:00:08 (hh:mm:ss) Elapsed Time
+  - RECON: Running re-definition of elements ( eleredef )..
+RECON Elapsed: 00:00:13 (hh:mm:ss) Elapsed Time
+  - RECON: Running re-definition of edges ( edgeredef )..
+RECON Elapsed: 00:00:23 (hh:mm:ss) Elapsed Time
+  - RECON: Running family definition ( famdef )..
+RECON Elapsed: 00:00:01 (hh:mm:ss) Elapsed Time
+  - Obtaining element sequences
+Number of families returned by RECON: 2477
+Processing families with greater than 15 elements
+Instance Gathering: 00:00:00 (hh:mm:ss) Elapsed Time
+Refining 8 families
+Family Refinement: 02:41:24 (hh:mm:ss) Elapsed Time
+Round Time: 04:15:49 (hh:mm:ss) Elapsed Time : 6 families discovered.
+
+RepeatScout/RECON discovery complete: 29 families found
+
+
+LTR Structural Analysis
+=======================
+Running LtrHarvest...     : 00:00:18 (hh:mm:ss) Elapsed Time
+Running Ltr_retriever...LTR_retriever failed to generate a file.  Please check /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA/RM_1033807.FriMay101205372024/LTR_1094517.FriMay101723372024/LRET_1094517.FriMay101723552024/LTR_retriever.log for details. at /bigdata/operations/pkgadmin/opt/linux/centos/8.x/x86_64/pkgs/RepeatModeler/2.0.5/share/RepeatModeler/LTRPipeline line 693.
+LTRPipeline Time: 00:00:55 (hh:mm:ss) Elapsed Time
+
+
+RepeatClassifier Version 2.0.5
+======================================
+  - Looking for Simple and Low Complexity sequences..
+  - Looking for similarity to known repeat proteins..
+  - Looking for similarity to known repeat consensi..
+Classification Time: 00:00:48 (hh:mm:ss) Elapsed Time
+
+
+Program Time: 05:19:40 (hh:mm:ss) Elapsed Time
+Working directory:  /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA/RM_1033807.FriMay101205372024
+may be deleted unless there were problems with the run.
+
+The results have been saved to:
+  /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA/Aspergillus_tubingensis_DFA-families.fa  - Consensus sequences for each family identified.
+  /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA/Aspergillus_tubingensis_DFA-families.stk - Seed alignments for each family identified.
+  /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA/Aspergillus_tubingensis_DFA-rmod.log     - Execution log.  Useful for reproducing results.
+
+The RepeatModeler stockholm file is formatted so that it can
+easily be submitted to the Dfam database.  Please consider contributing
+curated families to this open database and be a part of this growing
+community resource.  For more information contact help@dfam.org.
+
+
+/bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus
+gzip: lib/fungi_repeat.20170127.lib.gz: No such file or directory
+Loading RepeatMasker/4-1-5
+  Loading requirement: ncbi-rmblast/2.14.0 trf/4.09 hmmer/3 kent-tools/427
+    phred-phrap-consed/0.990329
+Unknown option: threads
+RepeatMasker version 4.1.5
+/opt/linux/rocky/8.x/x86_64/pkgs/RepeatMasker/4-1-5/RepeatMasker - 4.1.5
+NAME
+    RepeatMasker - Mask repetitive DNA
+
+SYNOPSIS
+      RepeatMasker [-options] <seqfiles(s) in fasta format>
+
+DESCRIPTION
+    The options are:
+
+    -h(elp)
+        Detailed help
+
+    Default settings are for masking all type of repeats in a primate
+    sequence.
+
+    -e(ngine) [crossmatch|wublast|abblast|ncbi|rmblast|hmmer]
+        Use an alternate search engine to the default. Note: 'ncbi' and
+        'rmblast' are both aliases for the rmblastn search engine engine.
+        The generic NCBI blastn program is not sensitive enough for use with
+        RepeatMasker at this time.
+
+    -pa(rallel) [number]
+        The number of sequence batch jobs [50kb minimum] to run in parallel.
+        RepeatMasker will fork off this number of parallel jobs, each
+        running the search engine specified. For each search engine
+        invocation ( where applicable ) a fixed the number of cores/threads
+        is used:
+
+          RMBlast     4 cores
+          ABBlast     4 cores
+          nhmmer      2 cores
+          crossmatch  1 core
+
+        To estimate the number of cores a RepeatMasker run will use simply
+        multiply the -pa value by the number of cores the particular search
+        engine will use.
+
+    -s  Slow search; 0-5% more sensitive, 2-3 times slower than default
+
+    -q  Quick search; 5-10% less sensitive, 2-5 times faster than default
+
+    -qq Rush job; about 10% less sensitive, 4->10 times faster than default
+        (quick searches are fine under most circumstances) repeat options
+
+    -nolow
+        Does not mask low_complexity DNA or simple repeats
+
+        NOTE: This is an important step in RepeatMasker, the identification
+        of low-divergence simple repeats early in RepeatMasker's search
+        phase lowers the overall false-positive rate for TE annotations
+        considerably. To simply remove simple repeats from the final output
+        of RepeatMasker use postprocessing tools such as:
+
+         egrep -v "Simple|Satellite" my_data.out > filtered.out
+
+        To remove these annotations from the final output. The -nolow option
+        should only be used when there is a specific reason to avoid
+        pre/post masking tandem/simple/low-complexity sequences.
+
+    -noint
+        Only masks low complex/simple repeats (no interspersed repeats)
+
+    -norna
+        Does not mask small RNA (pseudo) genes
+
+    -alu
+        Only masks Alus (and 7SLRNA, SVA and LTR5)(only for primate DNA)
+
+    -div [number]
+        Masks only those repeats with [number] percent diverged from
+        consensus
+
+    -lib [filename]
+        Allows use of a custom library (e.g. from another species)
+
+    -cutoff [number]
+        Sets cutoff score for masking repeats when using -lib (default 225)
+
+    -species <query species>
+        Specify the species or clade of the input sequence. The species name
+        must be a valid NCBI Taxonomy Database species name and be contained
+        in the RepeatMasker repeat database. Some examples are:
+
+          -species human
+          -species mouse
+          -species rattus
+          -species "ciona savignyi"
+          -species arabidopsis
+
+        Other commonly used species:
+
+        mammal, carnivore, rodentia, rat, cow, pig, cat, dog, chicken, fugu,
+        danio, "ciona intestinalis" drosophila, anopheles, worm, diatoaea,
+        artiodactyl, arabidopsis, rice, wheat, and maize
+
+    Contamination options
+
+    -is_only
+        Only clips E coli insertion elements out of fasta and .qual files
+
+    -is_clip
+        Clips IS elements before analysis (default: IS only reported)
+
+    -no_is
+        Skips bacterial insertion element check
+
+    Running options
+
+    -gc [number]
+        Use matrices calculated for 'number' percentage background GC level
+
+    -gccalc
+        RepeatMasker calculates the GC content even for batch files/small
+        seqs
+
+    -frag [number]
+        Maximum sequence length masked without fragmenting (default 60000)
+
+    -nocut
+        Skips the steps in which repeats are excised
+
+    -noisy
+        Prints search engine progress report to screen (defaults to .stderr
+        file)
+
+    -nopost
+        Do not postprocess the results of the run ( i.e. call ProcessRepeats
+        ). NOTE: This options should only be used when ProcessRepeats will
+        be run manually on the results.
+
+    output options
+
+    -dir [directory name]
+        Writes output to this directory (default is query file directory,
+        "-dir ." will write to current directory).
+
+    -a(lignments)
+        Writes alignments in .align output file
+
+    -inv
+        Alignments are presented in the orientation of the repeat (with
+        option -a)
+
+    -lcambig
+        Outputs ambiguous DNA transposon fragments using a lower case name.
+        All other repeats are listed in upper case. Ambiguous fragments
+        match multiple repeat elements and can only be called based on
+        flanking repeat information.
+
+    -small
+        Returns complete .masked sequence in lower case
+
+    -xsmall
+        Returns repetitive regions in lowercase (rest capitals) rather than
+        masked
+
+    -x  Returns repetitive regions masked with Xs rather than Ns
+
+    -poly
+        Reports simple repeats that may be polymorphic (in file.poly)
+
+    -source
+        Includes for each annotation the HSP "evidence". Currently this
+        option is only available with the "-html" output format listed
+        below.
+
+    -html
+        Creates an additional output file in xhtml format.
+
+    -ace
+        Creates an additional output file in ACeDB format
+
+    -gff
+        Creates an additional Gene Feature Finding format output
+
+    -u  Creates an additional annotation file not processed by
+        ProcessRepeats
+
+    -xm Creates an additional output file in cross_match format (for
+        parsing)
+
+    -no_id
+        Leaves out final column with unique ID for each element (was
+        default)
+
+    -e(xcln)
+        Calculates repeat densities (in .tbl) excluding runs of >=20 N/Xs in
+        the query
+
+CONFIGURATION OVERRIDES
+    -hmmer_dir <string>
+        The path to the HMMER profile HMM search software.
+
+    -default_search_engine <string>
+        The default search engine to use
+
+    -crossmatch_dir <string>
+        The path Phil Green's cross_match program ( phrap program suite ).
+
+    -trf_prgm <string>
+        The full path including the name for the TRF program.
+
+    -libdir <string>
+        Path to the RepeatMasker libraries directory.
+
+    -rmblast_dir <string>
+        The path to the installation of the RMBLAST sequence alignment
+        program.
+
+    -abblast_dir <string>
+        The path to the installation of the ABBLAST sequence alignment
+        program.
+
+SEE ALSO
+        Crossmatch, ProcessRepeats
+
+COPYRIGHT
+    2002-2020 Copyright (C) Institute for Systems Biology Developed by Arian
+    Smit and Robert Hubley.
+
+    2000-2001 Copyright (C) Arian Smit.
+
+    1996-1999 Copyright (C) University of Washington, Developed by Arian
+    Smit, Philip Green and Colin Wilson of the University of Washington
+    Department of Genomics.
+
+AUTHORS
+    Arian Smit <asmit@systemsbiology.org>
+
+    Robert Hubley <rhubley@systemsbiology.org>
+
+rsync: link_stat "/bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/analysis/RepeatMasker/Aspergillus_tubingensis_DFA/Aspergillus_tubingensis_DFA.sorted.fasta.masked" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1189) [sender=3.1.3]

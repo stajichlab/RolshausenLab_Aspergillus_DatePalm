@@ -1,0 +1,41 @@
+Aspergillus_tubingensis_DFA
+Loading funannotate/1.8
+  Loading requirement: CodingQuarry/2.0 phobius/1.01
+[Jul 07 02:57 PM]: OS: Rocky Linux 8.8, 256 cores, ~ 1057 GB RAM. Python: 3.8.15
+[Jul 07 02:57 PM]: Running 1.8.17
+[Jul 07 02:57 PM]: Found existing output directory annotation/Aspergillus_tubingensis_DFA. Warning, will re-use any intermediate files found.
+[Jul 07 02:57 PM]: Parsing input files
+[Jul 07 02:57 PM]: Existing tbl found: annotation/Aspergillus_tubingensis_DFA/update_results/Aspergillus_tubingensis_DFA.tbl
+[Jul 07 02:57 PM]: Adding Functional Annotation to Aspergillus tubingensis, NCBI accession: None
+[Jul 07 02:57 PM]: Annotation consists of: 12,175 gene models
+[Jul 07 02:57 PM]: 12,806 protein records loaded
+[Jul 07 02:57 PM]: Existing Pfam-A results found: annotation/Aspergillus_tubingensis_DFA/annotate_misc/annotations.pfam.txt
+[Jul 07 02:57 PM]: 16,508 annotations added
+[Jul 07 02:57 PM]: Running Diamond blastp search of UniProt DB version 2024_02
+[Jul 07 02:57 PM]: 1,067 valid gene/product annotations from 1,894 total
+[Jul 07 02:57 PM]: Existing Eggnog-mapper results found: annotation/Aspergillus_tubingensis_DFA/annotate_misc/eggnog.emapper.annotations
+[Jul 07 02:57 PM]: Parsing EggNog Annotations
+[Jul 07 02:57 PM]: EggNog version parsed as 2.1.12-424df74
+[Jul 07 02:57 PM]: 25,074  COG and EggNog annotations added
+[Jul 07 02:57 PM]: Combining UniProt/EggNog gene and product names using Gene2Product version 1.93
+[Jul 07 02:57 PM]: 3,094 gene name and product description annotations added
+[Jul 07 02:57 PM]: Existing MEROPS results found: annotation/Aspergillus_tubingensis_DFA/annotate_misc/annotations.merops.txt
+[Jul 07 02:57 PM]: 404 annotations added
+[Jul 07 02:57 PM]: Existing CAZYme results found: annotation/Aspergillus_tubingensis_DFA/annotate_misc/annotations.dbCAN.txt
+[Jul 07 02:57 PM]: 519 annotations added
+[Jul 07 02:57 PM]: Existing BUSCO2 results found: annotation/Aspergillus_tubingensis_DFA/annotate_misc/annotations.busco.txt
+[Jul 07 02:57 PM]: 3,217 annotations added
+[Jul 07 02:57 PM]: Existing Phobius results found: annotation/Aspergillus_tubingensis_DFA/annotate_misc/phobius.results.txt
+[Jul 07 02:57 PM]: Existing SignalP results found: annotation/Aspergillus_tubingensis_DFA/annotate_misc/signalp.results.txt
+[Jul 07 02:57 PM]: 957 secretome and 3,044 transmembane annotations added
+[Jul 07 02:57 PM]: Now parsing antiSMASH v7 results, finding SM clusters
+[Jul 07 02:57 PM]: Found 117 clusters, 122 biosynthetic enyzmes, and 432 smCOGs predicted by antiSMASH
+[Jul 07 02:57 PM]: Found 0 duplicated annotations, adding 133,970 valid annotations
+[Jul 07 02:57 PM]: Converting to final Genbank format, good luck!
+[Jul 07 02:58 PM]: Creating AGP file and corresponding contigs file
+[Jul 07 02:58 PM]: Cross referencing SM cluster hits with MIBiG database version 1.4
+[Jul 07 02:58 PM]: Creating tab-delimited SM cluster output
+[Jul 07 02:58 PM]: Writing genome annotation table.
+[Jul 07 03:00 PM]: Funannotate annotate has completed successfully!
+-------------------------------------------------------
+-------------------------------------------------------

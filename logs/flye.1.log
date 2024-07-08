@@ -1,0 +1,65 @@
+x01
+[2024-02-20 19:39:20] INFO: Starting Flye 2.9-b1774
+[2024-02-20 19:39:20] INFO: >>>STAGE: configure
+[2024-02-20 19:39:20] INFO: Configuring run
+[2024-02-20 19:39:38] INFO: Total read length: 1216290170
+[2024-02-20 19:39:38] INFO: Reads N50/N90: 5443 / 1823
+[2024-02-20 19:39:38] INFO: Minimum overlap set to 2000
+[2024-02-20 19:39:38] INFO: >>>STAGE: assembly
+[2024-02-20 19:39:38] INFO: Assembling disjointigs
+[2024-02-20 19:39:38] INFO: Reading sequences
+[2024-02-20 19:39:55] INFO: Building minimizer index
+[2024-02-20 19:39:55] INFO: Pre-calculating index storage
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-02-20 19:40:04] INFO: Filling index
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-02-20 19:40:16] INFO: Extending reads
+[2024-02-20 19:40:29] INFO: Overlap-based coverage: 22
+[2024-02-20 19:40:29] INFO: Median overlap divergence: 0.0228669
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-02-20 19:42:23] INFO: Assembled 67 disjointigs
+[2024-02-20 19:42:24] INFO: Generating sequence
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-02-20 19:42:26] INFO: Filtering contained disjointigs
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-02-20 19:42:28] INFO: Contained seqs: 46
+[2024-02-20 19:42:29] INFO: >>>STAGE: consensus
+[2024-02-20 19:42:29] INFO: Running Minimap2
+[2024-02-20 19:43:40] INFO: Computing consensus
+[2024-02-20 19:44:55] INFO: Alignment error rate: 0.031353
+[2024-02-20 19:44:56] INFO: >>>STAGE: repeat
+[2024-02-20 19:44:56] INFO: Building and resolving repeat graph
+[2024-02-20 19:44:56] INFO: Parsing disjointigs
+[2024-02-20 19:44:56] INFO: Building repeat graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-02-20 19:44:59] INFO: Median overlap divergence: 0.235347
+[2024-02-20 19:45:00] INFO: Parsing reads
+[2024-02-20 19:45:17] INFO: Aligning reads to the graph
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-02-20 19:47:23] INFO: Aligned read sequence: 1037568947 / 1076979337 (0.963407)
+[2024-02-20 19:47:23] INFO: Median overlap divergence: 0.0105727
+[2024-02-20 19:47:23] INFO: Mean edge coverage: 28
+[2024-02-20 19:47:23] INFO: Simplifying the graph
+[2024-02-20 19:47:25] INFO: >>>STAGE: contigger
+[2024-02-20 19:47:25] INFO: Generating contigs
+[2024-02-20 19:47:25] INFO: Reading sequences
+[2024-02-20 19:47:44] INFO: Generated 10 contigs
+[2024-02-20 19:47:44] INFO: Added 0 scaffold connections
+[2024-02-20 19:47:45] INFO: >>>STAGE: polishing
+[2024-02-20 19:47:45] INFO: Polishing genome (1/1)
+[2024-02-20 19:47:45] INFO: Running minimap2
+[2024-02-20 19:48:52] INFO: Separating alignment into bubbles
+[2024-02-20 19:50:24] INFO: Alignment error rate: 0.017877
+[2024-02-20 19:50:24] INFO: Correcting bubbles
+0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
+[2024-02-20 19:51:53] INFO: >>>STAGE: finalize
+[2024-02-20 19:51:54] INFO: Assembly statistics:
+
+	Total length:	35487149
+	Fragments:	10
+	Fragments N50:	4183511
+	Largest frg:	6136931
+	Scaffolds:	0
+	Mean coverage:	32
+
+[2024-02-20 19:51:54] INFO: Final assembly: /bigdata/stajichlab/shared/projects/RolshausenLab_Collaboration/DatePalm_Aspergillus/asm/flye/Aspergillus_tubingensis_DFA/assembly.fasta

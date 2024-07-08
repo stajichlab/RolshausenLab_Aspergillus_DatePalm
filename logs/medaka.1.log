@@ -1,0 +1,4 @@
+Loading medaka/1.6
+  Loading requirement: libdeflate/1.17 htslib/1.19.1 samtools/1.19.2
+    minimap2/2.24 bwa/0.7.17 bcftools/1.19
+working on strain Aspergillus_tubingensis_DFA
