@@ -5,7 +5,7 @@ Submit-block ::= {
         last "Stajich",
         first "Jason",
         middle "",
-        initials "",
+        initials "E.",
         suffix "",
         title ""
       },
@@ -50,7 +50,7 @@ Submit-block ::= {
             last "Rolshausen",
             first "Philippe",
             middle "",
-            initials "",
+            initials "E.",
             suffix "",
             title ""
           }
@@ -100,7 +100,7 @@ Seqdesc ::= pub {
               last "Rolshausen",
               first "Philippe",
               middle "",
-              initials "",
+              initials "E.",
               suffix "",
               title ""
             }
@@ -126,6 +126,25 @@ Seqdesc ::= user {
     {
       label str "AdditionalComment",
       data str "Submission Title:None"
+    }
+  }
+}
+Seqdesc ::= user {
+  type str "DBLink",
+  data {
+    {
+      label str "BioProject",
+      num 1,
+      data strs {
+        "PRJNA1132290"
+      }
+    },
+    {
+      label str "BioSample",
+      num 1,
+      data strs {
+        "SAMN42339317"
+      }
     }
   }
 }
