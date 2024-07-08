@@ -8,3 +8,4 @@ See the [pipeline] folder for assembly, annotation, and statistics calculations.
 
 Notes:
 * final assembly files used are called XX.pilon.fasta but the polishing step was actually POLCA used
+* scaffold_10 was removed based on its identity to the subset of a match to scaffold_6
