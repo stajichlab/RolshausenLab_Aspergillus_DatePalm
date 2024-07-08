@@ -7,7 +7,7 @@ colors1 <- colorRampPalette(brewer.pal(8, "RdYlBu"))
 manualColors = c("dodgerblue2", "red1", "grey20")
 
 alternating_colors = rep( c("red", "black", "blue", "orange","darkgreen","brown","slategray","purple"), times= 20)
-Prefix = "PEFX010000+" # fixme
+Prefix = "scaffold_" # fixme
 mosdepthdir = "coverage/mosdepth"
 #chrlist = chrTibble$chrnames
 #chrlist = 1:42
@@ -60,52 +60,48 @@ plot_chrs <- function(chrom, data) {
   colnames(bedwindows) = c("Chr", "Start", "End", "Depth", "Strain")
 
   bedwindows$CHR <- sub(Prefix, "", bedwindows$Chr, perl = TRUE)
-  bedwindows$CHR <- sub(".1$", "", bedwindows$CHR, perl = TRUE)
-	unique(bedwindows$CHR)
-	bedwindows$CHR <- factor(as.numeric(bedwindows$CHR))
-	bedwindows <- bedwindows[ with(bedwindows, order(CHR)), ]
-	covsum <- as_tibble(bedwindows) %>%  group_by(Strain,CHR) %>% summarise(median_depth = median(Depth),
-	                                                                        mean_depth = mean(Depth),
-	                                                                        chrlen=max(End)) %>% 
-	  filter(!is.na(mean_depth))
-	# filter short chroms?
-	covsum_aneu <- covsum %>% select(CHR,Strain,mean_depth,chrlen) %>%  
-	  filter(mean_depth > 1.5 | mean_depth < 0.5) %>% 
+  unique(bedwindows$CHR)
+  bedwindows$CHR <- factor(as.numeric(bedwindows$CHR))
+  bedwindows <- bedwindows[ with(bedwindows, order(CHR)), ]
+  as_tibble(bedwindows)
+
+  covsum <- as_tibble(bedwindows) %>%  group_by(Strain,CHR) %>% summarise(median_depth = median(Depth),
+	                                                                  mean_depth = mean(Depth),
+	                                                                  chrlen=max(End)) %>% filter(!is.na(mean_depth))
+  covsum
+  # filter short chroms?
+  covsum_aneu_avg <- covsum %>% select(CHR,Strain,mean_depth,chrlen) %>%  
+	  filter(mean_depth > 1.1 | mean_depth < 0.9) %>% 
 	  filter(chrlen > 100000 ) %>% 
 	  dplyr::mutate_if(is.numeric, round, 2) 
 	
-	write_tsv(covsum_aneu,"plots/strain_aneu_mean_coverage.txt")	
+  write_tsv(covsum_aneu_avg,"plots/strain_aneu_mean_coverage.txt")	
 	
-	covsum_aneu <- covsum %>% select(CHR,Strain,median_depth,chrlen) %>% 
-	  filter(median_depth > 1.5 | median_depth < 0.5) %>% 
-	  filter(chrlen > 100000 ) %>% filter(Strain != "CCFEE_5056") %>%
+  covsum_aneu <- covsum %>% select(CHR,Strain,median_depth,chrlen) %>% 
+	  filter(median_depth > 1.1 | median_depth < 0.9) %>% 
+	  filter(chrlen > 100000 ) %>%
 	  dplyr::mutate_if(is.numeric, round, 2)
 	
-	write_tsv(covsum_aneu,"plots/strain_aneu_median_coverage.txt")	
-	Strains_With_Anneuploid = unique(covsum_aneu$Strain)
-#	covsum_wide_aneu <- covsum_aneu %>% pivot_wider(names_from = Strain, values_from = mean_depth,values_fill = 0) %>% 
-#	  arrange(as.numeric(CHR)) %>% dplyr::mutate_if(is.numeric, round, 2) 
-#	write_tsv(covsum_aneu,"plots/strain_aneu_mean_coverage.txt")	
+ write_tsv(covsum_aneu,"plots/strain_aneu_median_coverage.txt")	
+ Strains_With_Anneuploid = unique(covsum_aneu_avg$Strain)
 	
-	covsum_wide <- covsum %>%  select(CHR,Strain,mean_depth,chrlen) %>% 
-	  pivot_wider(names_from = Strain, values_from = mean_depth, values_fill = 0) %>% 
-	  arrange(as.numeric(CHR)) %>% dplyr::mutate_if(is.numeric, round, 2) 
-	write_tsv(covsum_wide,"plots/strain_mean_coverage.txt")
+ covsum_wide_avg <- covsum %>%  select(CHR,Strain,mean_depth,chrlen) %>%
+ pivot_wider(names_from = Strain, values_from = mean_depth, values_fill = 0) %>% 
+ arrange(as.numeric(CHR)) %>% dplyr::mutate_if(is.numeric, round, 2) 
+ write_tsv(covsum_wide_avg,"plots/strain_mean_coverage.txt")
 
-	covsum_wide <- covsum %>% select(CHR,Strain,median_depth,chrlen) %>% 
+  covsum_wide <- covsum %>% select(CHR,Strain,median_depth,chrlen) %>% 
 	  pivot_wider(names_from = Strain, values_from = median_depth, values_fill = 0) %>% 
 	    arrange(as.numeric(CHR)) %>% dplyr::mutate_if(is.numeric, round, 2) 
-	write_tsv(covsum_wide,"plots/strain_median_coverage.txt")
+  write_tsv(covsum_wide,"plots/strain_median_coverage.txt")
 	  
-	#subset(bedwindows,bedwindows)
-#	bedwindows$CHR <- bedwindows$CHR
-  #d = bedwindows[bedwindows$CHR %in% chrlist, ]
-	d = bedwindows
+  d = bedwindows
   d <- d[order(as.numeric(d$CHR), d$Start), ]
   d$index = rep.int(seq_along(unique(d$CHR)), times = tapply(d$Start, d$CHR, length))
   d$pos = NA
 
   nchr = length(unique(bedwindows$CHR))
+  print("num of chroms is",nchr)
   lastbase = 0
   ticks = NULL
   minor = vector(, 8)
@@ -133,10 +129,9 @@ plot_chrs <- function(chrom, data) {
   #pdf(pdffile, width = 16, height = 4)
   Title = "Depth of sequence coverage"
 # let's remove some poor behaving strains w low mapping - could try to calc this from data but easier for now to just drop these 2
- d = subset(d,! (d$Strain %in% c("CCFEE_5069","CCFEE_5042","CCFEE_5056","DBVPG_6094","EXF_10533")))
  Strainlist = unique(d$Strain)
  total = length(Strainlist)
- chunks = split(Strainlist, ceiling(seq_along(Strainlist)/40))
+ chunks = split(Strainlist, ceiling(seq_along(Strainlist)/10))
  for(i in 1:length(chunks)) {
   dsubStrains = d[d$Strain %in% chunks[[i]], ]
   theseticks <- tapply(dsubStrains$pos, dsubStrains$index, quantile, probs = 0.5)
@@ -178,3 +173,4 @@ plot_chrs <- function(chrom, data) {
 	  pdffile=sprintf("plots/Anneu_StrainPlot_%dkb.%s.pdf", window/1000,StrainsAnn[i])
 	  ggsave(plot = annplts[[i]], file = pdffile, width=20, height=8)
 	}
+#}
