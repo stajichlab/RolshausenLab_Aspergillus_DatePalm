@@ -1,0 +1,26 @@
+Strain,SRA_Run,BioSample,env_medium,geo_loc_name,host,host_disease,isolate,isolation_source
+WU-2223L,DRR231531,SAMD00216538,soil,Japan:Aomori,,,,
+RIB2623,DRR308519,SAMD00391814,missing,missing,,,,
+RIB2631,DRR308520,SAMD00391815,missing,missing,,,,
+RIB2036,DRR308521,SAMD00391816,soil,missing,,,,
+JCM22294,DRR308529,SAMD00391824,Awamori koji,Japan,,,,
+JCM22295,DRR308530,SAMD00391825,Shochu koji,Japan,,,,
+JCM22299,DRR308531,SAMD00391826,Awamori koji,Japan,,,,
+JCM22302,DRR308532,SAMD00391834,Awamori koji,Japan,,,,
+IFM_54640,DRR385063,SAMD00505447,missing,"Japan:Okayama, Kurashiki",Homo sapiens,,,sputum
+IFM_55763,DRR385064,SAMD00505448,missing,Japan:Yamanashi,,,,vineyard
+IFM_57143,DRR385065,SAMD00505449,missing,Japan:Osaka,Homo sapiens,,,
+IFM_57258,DRR385066,SAMD00505450,missing,"Japan:Nagasaki, Minami-Matsuura",,,,soil
+IFM_56815,DRR385073,SAMD00505457,missing,Japan:Kochi,Homo sapiens,,,ear
+IFM_61612,DRR385074,SAMD00505458,missing,Japan:Tokyo,Homo sapiens,,,BALF
+CBS_134.48,SRR3927524,SAMN00203939,,,,,,
+MOD1-FUNGI3,SRR7889976,SAMN10078275,,USA:MD,,,,Walnut halves
+MOD1-FUNGI4,SRR7889979,SAMN10078276,,USA:MD,,,,Moldy peanuts
+NASAJPL_VS_III_B_KN_t,SRR12385190,SAMN15543683,,USA,,,,Vacuum filter from cleanroom
+NASAJPL_S_N-302-OC-P2,SRR12439775,SAMN15705199,,USA,,,,SpX12/RR9 Outside cage
+NASAJPL_S_N-304-OC-P1,SRR12439781,SAMN15705200,,USA,,,,SpX11/RR5 Outisde cage
+NASAJPL_S_N-308-IC-B1,SRR12439790,SAMN15705202,,USA,,,,SpX12/RR9 Inside cage
+NASAJPL_JS3-R1,SRR12439810,SAMN15705203,,USA,,,,HEPA air filter
+NASAJPL_JS3-P2,SRR12439762,SAMN15705204,,USA,,,,HEPA air filter
+NRRL_4875,SRR25758810,SAMN37147745,,"USA: California,Los Angeles",Homo sapiens,infection,1138_1,"Respiratory, Lower, Sputum-Expectorated"
+
