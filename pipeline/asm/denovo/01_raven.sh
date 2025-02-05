@@ -1,5 +1,5 @@
 #!/usr/bin/bash -l
-#SBATCH -p short -C xeon -N 1 -c 24 --mem 96gb --out logs/raven.%a.log 
+#SBATCH -p epyc -N 1 -c 24 --mem 96gb --out logs/raven.%a.log 
 module load raven
 IN=input/nanopore
 OUT=asm/raven

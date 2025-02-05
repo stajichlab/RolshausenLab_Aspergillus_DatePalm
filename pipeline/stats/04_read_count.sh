@@ -23,7 +23,6 @@ SAMPLES=samples.csv
 mkdir -p $OUTDIR
 
 IFS=, # set the delimiter to be ,
-IFS=, # set the delimiter to be ,
 
 tail -n +2 $SAMPLES | sed -n ${N}p | while read NAME SPECIES STRAIN NANOPORE ILLUMINA SUBPHYLUM PHYLUM LOCUS RNASEQ
 do    

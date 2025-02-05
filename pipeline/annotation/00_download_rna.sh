@@ -29,9 +29,7 @@ if [ ! -s $SRAFILE ]; then
 	echo "No SRA file $SRAFILE"
 	exit
 fi
-IFS=,
-SPECIES=A_tubingensis
-sed -n ${N}p $SRAFILE | while read SRA 
+sed -n ${N}p $SRAFILE | while read SRA SPECIES
 do
   mkdir -p $FOLDER/$SPECIES
   if [ ! -s $FOLDER/$SPECIES/${SRA}_1.fastq.gz ]; then

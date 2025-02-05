@@ -1,5 +1,5 @@
 #!/usr/bin/bash -l
-#SBATCH -N 1 -c 32 --mem 128gb --out logs/masurca.%a.log -n 1 -a 1
+#SBATCH -N 1 -c 32 --mem 128gb --out logs/masurca.%a.log -n 1 
 module load masurca
 IN=input/nanopore
 IN1=input/illumina

@@ -1,5 +1,5 @@
 #!/usr/bin/bash -l
-#SBATCH -p short -C xeon -N 1 -c 24 --mem 96gb --out logs/flye.%a.log -a 1-8
+#SBATCH -p epyc -N 1 -c 24 --mem 96gb --out logs/flye.%a.log -a 1-8
 module load Flye
 IN=input/nanopore
 OUT=asm/flye
