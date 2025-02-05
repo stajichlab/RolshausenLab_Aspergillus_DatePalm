@@ -1,0 +1,226 @@
+IQ-TREE 2.2.2.6 COVID-edition built May 27 2023
+
+Input file name: strain_tree/Atub_v1.All.SNP.mfa
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 668090
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 26 sequences with 584611 nucleotide sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 584611
+Number of distinct site patterns: 163789
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+ASC
+
+Rate parameter R:
+
+  A-C: 0.9957
+  A-G: 5.7002
+  A-T: 1.2189
+  C-G: 0.8465
+  C-T: 5.6904
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2471
+  pi(C) = 0.2533
+  pi(G) = 0.2524
+  pi(T) = 0.2472
+
+Rate matrix Q:
+
+  A    -1.032    0.1307    0.7453    0.1561
+  C    0.1275   -0.9669    0.1107    0.7287
+  G    0.7298    0.1111   -0.9689    0.1281
+  T     0.156    0.7468    0.1308    -1.034
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -8151805.6105 (s.e. 4590.2150)
+Unconstrained log-likelihood (without tree): -5825365.9550
+Number of free parameters (#branches + #model parameters): 57
+Akaike information criterion (AIC) score: 16303725.2209
+Corrected Akaike information criterion (AICc) score: 16303725.2323
+Bayesian information criterion (BIC) score: 16304368.1070
+
+Total tree length (sum of branch lengths): 3.6563
+Sum of internal branch lengths: 1.7891 (48.9324% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'RefDFA' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++**RefDFA
+|
+|            +---------CBS_134.48
+|      +-----| (100/100)
+|      |     |                              +------------IFM_57258
+|      |     |                      +-------| (100/100)
+|      |     |                      |       +-------JCM22295
+|      |     +----------------------| (100/100)
+|      |                            +-------JCM22302
++------| (100/100)
+|      |                                    +--------IFM_54640
+|      |                                 +--| (100/100)
+|      |                                 |  |   +--IFM_56815
+|      |                                 |  +---| (100/100)
+|      |                                 |      +----NASAJPL_VS_III_B_KN_t
+|      |                            +----| (100/100)
+|      |                            |    |        +----IFM_55763
+|      |                            |    |     +--| (100/100)
+|      |                            |    |     |  +-----RIB2036
+|      |                            |    |  +--| (100/100)
+|      |                            |    |  |  |  +------NASAJPL_S_N-304-OC-P1
+|      |                            |    |  |  +--| (100/100)
+|      |                            |    |  |     +---NRRL_4875
+|      |                            |    +--| (100/100)
+|      |                            |       |     +----IFM_57143
+|      |                            |       |  +--| (100/100)
+|      |                            |       |  |  +---IFM_61612
+|      |                            |       +--| (100/100)
+|      |                            |          |             +--JCM22294
+|      |                            |          |          +--| (100/100)
+|      |                            |          |          |  +--JCM22299
+|      |                            |          |       +--| (100/100)
+|      |                            |          |       |  +--RIB2623
+|      |                            |          |  +----| (100/100)
+|      |                            |          |  |    +--WU-2223L
+|      |                            |          +--| (100/100)
+|      |                            |             +------NASAJPL_S_N-308-IC-B1
+|      |                      +-----| (100/100)
+|      |                      |     |        +--MOD1-FUNGI3
+|      |                      |     |  +-----| (100/100)
+|      |                      |     |  |     +--MOD1-FUNGI4
+|      |                      |     +--| (100/100)
+|      |                      |        +---------NASAJPL_S_N-302-OC-P2
+|      |              +-------| (100/100)
+|      |              |       +-----RIB2631
+|      |       +------| (100/100)
+|      |       |      +--NASAJPL_JS3-P2
+|      +-------| (100/100)
+|              +--NASAJPL_JS3-R1
+|
++**DFA
+
+Tree in newick format:
+
+(RefDFA:0.0000001711,((CBS_134.48:0.1606831849,((IFM_57258:0.2080657669,JCM22295:0.1288425293)100/100:0.1241864473,JCM22302:0.1207272721)100/100:0.3531993587)100/100:0.0980111353,((((((IFM_54640:0.1445858335,(IFM_56815:0.0517621465,NASAJPL_VS_III_B_KN_t:0.0790881281)100/100:0.0634800918)100/100:0.0490654040,(((IFM_55763:0.0843035205,RIB2036:0.0976985619)100/100:0.0334879342,(NASAJPL_S_N-304-OC-P1:0.1195303378,NRRL_4875:0.0747819286)100/100:0.0317757901)100/100:0.0243421162,((IFM_57143:0.0862374081,IFM_61612:0.0740204171)100/100:0.0475566999,((((JCM22294:0.0013428370,JCM22299:0.0028343731)100/100:0.0044734218,RIB2623:0.0011378603)100/100:0.0082407746,WU-2223L:0.0037724674)100/100:0.0788938029,NASAJPL_S_N-308-IC-B1:0.1080877221)100/100:0.0337309848)100/100:0.0227367250)100/100:0.0263817771)100/100:0.0849734547,((MOD1-FUNGI3:0.0044886741,MOD1-FUNGI4:0.0059104433)100/100:0.0928709777,NASAJPL_S_N-302-OC-P2:0.1501462289)100/100:0.0529513106)100/100:0.0935551738,RIB2631:0.0941411331)100/100:0.1202154958,NASAJPL_JS3-P2:0.0521606787)100/100:0.1053890417,NASAJPL_JS3-R1:0.0128449941)100/100:0.1256101309)100/100:0.1139989867,DFA:0.0000017105);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -8151805.72429018
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.00000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++**RefDFA
+|
+|            +---------CBS_134.48
+|      +-----| (100)
+|      |     |                              +------------IFM_57258
+|      |     |                      +-------| (100)
+|      |     |                      |       +-------JCM22295
+|      |     +----------------------| (100)
+|      |                            +-------JCM22302
++------| (100)
+|      |                                    +--------IFM_54640
+|      |                                 +--| (100)
+|      |                                 |  |   +--IFM_56815
+|      |                                 |  +---| (100)
+|      |                                 |      +----NASAJPL_VS_III_B_KN_t
+|      |                            +----| (100)
+|      |                            |    |        +----IFM_55763
+|      |                            |    |     +--| (100)
+|      |                            |    |     |  +-----RIB2036
+|      |                            |    |  +--| (100)
+|      |                            |    |  |  |  +------NASAJPL_S_N-304-OC-P1
+|      |                            |    |  |  +--| (100)
+|      |                            |    |  |     +---NRRL_4875
+|      |                            |    +--| (100)
+|      |                            |       |     +----IFM_57143
+|      |                            |       |  +--| (100)
+|      |                            |       |  |  +---IFM_61612
+|      |                            |       +--| (100)
+|      |                            |          |             +--JCM22294
+|      |                            |          |          +--| (100)
+|      |                            |          |          |  +--JCM22299
+|      |                            |          |       +--| (100)
+|      |                            |          |       |  +--RIB2623
+|      |                            |          |  +----| (100)
+|      |                            |          |  |    +--WU-2223L
+|      |                            |          +--| (100)
+|      |                            |             +------NASAJPL_S_N-308-IC-B1
+|      |                      +-----| (100)
+|      |                      |     |        +--MOD1-FUNGI3
+|      |                      |     |  +-----| (100)
+|      |                      |     |  |     +--MOD1-FUNGI4
+|      |                      |     +--| (100)
+|      |                      |        +---------NASAJPL_S_N-302-OC-P2
+|      |              +-------| (100)
+|      |              |       +-----RIB2631
+|      |       +------| (100)
+|      |       |      +--NASAJPL_JS3-P2
+|      +-------| (100)
+|              +--NASAJPL_JS3-R1
+|
++**DFA
+
+
+Consensus tree in newick format: 
+
+(RefDFA:0.0000003635,((CBS_134.48:0.1606838123,((IFM_57258:0.2080670599,JCM22295:0.1288418955)100:0.1241860530,JCM22302:0.1207301610)100:0.3531996010)100:0.0980121050,((((((IFM_54640:0.1445853960,(IFM_56815:0.0517618959,NASAJPL_VS_III_B_KN_t:0.0790879079)100:0.0634798562)100:0.0490652979,(((IFM_55763:0.0843034338,RIB2036:0.0976982312)100:0.0334877752,(NASAJPL_S_N-304-OC-P1:0.1195299233,NRRL_4875:0.0747817074)100:0.0317756944)100:0.0243422669,((IFM_57143:0.0862369592,IFM_61612:0.0740204011)100:0.0475569123,((((JCM22294:0.0013428202,JCM22299:0.0028343894)100:0.0044733864,RIB2623:0.0011379294)100:0.0082408856,WU-2223L:0.0037724763)100:0.0788934791,NASAJPL_S_N-308-IC-B1:0.1080873077)100:0.0337313073)100:0.0227362724)100:0.0263821476)100:0.0849741748,((MOD1-FUNGI3:0.0044886417,MOD1-FUNGI4:0.0059104957)100:0.0928712341,NASAJPL_S_N-302-OC-P2:0.1501452757)100:0.0529516317)100:0.0935536971,RIB2631:0.0941422580)100:0.1202148299,NASAJPL_JS3-P2:0.0521617079)100:0.1053859900,NASAJPL_JS3-R1:0.0128465406)100:0.1256091600)100:0.1140000788,DFA:0.0000017105);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t strain_tree/Atub_v1.All.SNP.mfa.treefile -m "GTR{0.995712,5.70024,1.21887,0.846526,5.69036}+F{0.247113,0.253324,0.252386,0.247177}+ASC" --length 584611
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s strain_tree/Atub_v1.All.SNP.mfa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s strain_tree/Atub_v1.All.SNP.mfa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Jul  9 08:43:43 2024
+Total CPU time used: 2576.0528 seconds (0h:42m:56s)
+Total wall-clock time used: 529.0841188 seconds (0h:8m:49s)
+
