@@ -1,3 +1,3 @@
 NAME,SPECIES,STRAIN,NANOPORE,ILLUMINA,SUBPHYLUM,PHYLUM,LOCUS,RNASEQ
 Aspergillus_tubingensis_DFA,Aspergillus tubingensis,DFA,4632_Nanopore.fastq.gz,4632,Pezizomycotina,Ascomycota,ABZX51,A_tubingensis
-Aspergillus_niger_DFA-N,Aspergillus niger,DFA-N,6119_Nanopore.fastq.gz,6119_001,Pezizomycotina,Ascomycota,ABX123,A_niger
+Aspergillus_niger_DFA-N,Aspergillus niger,DFA-N,6119_Nanopore.fastq.gz,6119_001,Pezizomycotina,Ascomycota,ACMYSQ,A_niger
