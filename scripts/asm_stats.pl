@@ -14,7 +14,7 @@ my $read_map_stat = 'mapping_report';
 my $dir = shift || 'genomes';
 my @header;
 my %header_seen;
-
+my $first_sum = 1;
 opendir(DIR,$dir) || die $!;
 my $first = 1;
 foreach my $file ( readdir(DIR) ) {
@@ -129,7 +129,6 @@ foreach my $file ( readdir(DIR) ) {
     }
 
     if ( -d $read_map_stat ) {
-
 	my $sumstatfile = File::Spec->catfile($read_map_stat,
 					      sprintf("%s.bbmap_summary.txt",$stemorig));
 	if ( -f $sumstatfile ) {
@@ -146,16 +145,16 @@ foreach my $file ( readdir(DIR) ) {
 		}  elsif( /^Reads:\s+(\S+)/) {
 		    $stats{$stem}->{'Reads'} = $1;
 		}
-
 	    }
 	    if ( $stats{$stem}->{'TOTAL LENGTH'} > 0 ) {
 	    	$stats{$stem}->{'Average_Coverage'} =
 		    sprintf("%.1f",$base_count / $stats{$stem}->{'TOTAL LENGTH'});
 	    }
-	    if( $first )  {
+	    if( $first_sum )  {
 		push @header, ('Reads',
 			       'Mapped_reads',			   
 			       'Average_Coverage');
+		$first_sum = 0;
 	    }
 	} else {
 	    warn("cannot find $sumstatfile\n");

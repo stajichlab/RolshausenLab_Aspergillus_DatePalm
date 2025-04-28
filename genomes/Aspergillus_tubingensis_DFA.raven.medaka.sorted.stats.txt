@@ -1,0 +1,15 @@
+Assembly statistics for: Aspergillus_tubingensis_DFA.raven.medaka.sorted.fasta
+   CONTIG COUNT  =  37
+   TOTAL LENGTH  =  35440644
+            MIN  =  11588
+            MAX  =  6827489
+         MEDIAN  =  481240
+           MEAN  =  957855.24
+            L50  =  6
+            N50  =  1893821
+            L90  =  18
+            N90  =  596125
+            GC%  =  49.09
+  T2T SCAFFOLDS  =  0
+   TELOMERE FWD  =  0
+   TELOMERE REV  =  6

@@ -1,0 +1,15 @@
+Assembly statistics for: genomes/Aspergillus_tubingensis_DFA.canu.fasta
+   CONTIG COUNT  =  1231
+   TOTAL LENGTH  =  48514823
+            MIN  =  1919
+            MAX  =  2693235
+         MEDIAN  =  10908
+           MEAN  =  39410.90
+            L50  =  13
+            N50  =  1184190
+            L90  =  620
+            N90  =  10845
+            GC%  =  48.65
+  T2T SCAFFOLDS  =  0
+   TELOMERE FWD  =  14
+   TELOMERE REV  =  10

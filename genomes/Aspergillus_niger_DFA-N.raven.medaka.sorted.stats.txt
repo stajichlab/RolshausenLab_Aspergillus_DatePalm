@@ -1,0 +1,15 @@
+Assembly statistics for: genomes/Aspergillus_niger_DFA-N.raven.medaka.sorted.fasta
+   CONTIG COUNT  =  62
+   TOTAL LENGTH  =  39199527
+            MIN  =  4904
+            MAX  =  4559418
+         MEDIAN  =  83235
+           MEAN  =  632250.44
+            L50  =  6
+            N50  =  2476866
+            L90  =  18
+            N90  =  344719
+            GC%  =  49.30
+  T2T SCAFFOLDS  =  0
+   TELOMERE FWD  =  3
+   TELOMERE REV  =  1

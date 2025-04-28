@@ -1,0 +1,15 @@
+Assembly statistics for: genomes/Aspergillus_niger_DFA-N.canu.pilon.fasta
+   CONTIG COUNT  =  62
+   TOTAL LENGTH  =  39928116
+            MIN  =  5320
+            MAX  =  6549480
+         MEDIAN  =  48332
+           MEAN  =  644001.87
+            L50  =  4
+            N50  =  4104183
+            L90  =  11
+            N90  =  791283
+            GC%  =  49.24
+  T2T SCAFFOLDS  =  4
+   TELOMERE FWD  =  9
+   TELOMERE REV  =  6

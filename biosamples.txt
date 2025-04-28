@@ -1,2 +1,0 @@
-SAMN42339317,Aspergillus tubingensis,DFA
-SAMN46708316,Aspergillus niger,DFA-N

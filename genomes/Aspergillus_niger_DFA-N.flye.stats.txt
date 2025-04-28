@@ -1,0 +1,15 @@
+Assembly statistics for: genomes/Aspergillus_niger_DFA-N.flye.fasta
+   CONTIG COUNT  =  30
+   TOTAL LENGTH  =  38203688
+            MIN  =  525
+            MAX  =  4980542
+         MEDIAN  =  169824
+           MEAN  =  1273456.27
+            L50  =  5
+            N50  =  4103995
+            L90  =  9
+            N90  =  2650051
+            GC%  =  49.28
+  T2T SCAFFOLDS  =  4
+   TELOMERE FWD  =  5
+   TELOMERE REV  =  9

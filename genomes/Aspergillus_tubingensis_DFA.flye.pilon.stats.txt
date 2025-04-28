@@ -1,0 +1,15 @@
+Assembly statistics for: genomes/Aspergillus_tubingensis_DFA.flye.pilon.fasta
+   CONTIG COUNT  =  10
+   TOTAL LENGTH  =  35488367
+            MIN  =  8076
+            MAX  =  6137164
+         MEDIAN  =  4154191
+           MEAN  =  3548836.70
+            L50  =  4
+            N50  =  4183659
+            L90  =  7
+            N90  =  3870736
+            GC%  =  49.08
+  T2T SCAFFOLDS  =  7
+   TELOMERE FWD  =  7
+   TELOMERE REV  =  7
