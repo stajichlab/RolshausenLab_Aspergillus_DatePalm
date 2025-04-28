@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -p short -C xeon -N 1 -c 24 -n 1 --mem 16G --out logs/antismash.%a.log -J antismash
+#SBATCH -p short -C cascade -N 1 -c 24 -n 1 --mem 16G --out logs/antismash.%a.log -J antismash
 
 module load antismash/7.1.0
 hostname

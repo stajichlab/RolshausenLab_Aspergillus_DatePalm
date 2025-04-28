@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --ntasks 48 --nodes 1 --mem 80G --time 48:00:00
+#SBATCH -c 48 -n 1 -N 1 --mem 80G --time 48:00:00 
 #SBATCH --out logs/iprscan.%a.log
 hostname
 CPU=1
